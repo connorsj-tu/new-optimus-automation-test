@@ -1,0 +1,13 @@
+# ignore all dot files except docker and git ignores
+.*
+!.dockerignore
+!.gitignore
+
+# ignore all config.properties except the docker stored one
+config.properties
+!./docker/config.properties
+
+# ignore output folders
+bin
+output
+target
