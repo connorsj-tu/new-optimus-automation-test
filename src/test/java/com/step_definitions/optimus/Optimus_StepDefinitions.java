@@ -451,11 +451,13 @@ public class Optimus_StepDefinitions {
 
 		// Enter Ginger logon email address
 		// TODO - Currently hardcoded, need to pull from credentials.json
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_username_TextBox, "present").sendKeys("James Connors");
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_username_TextBox, "present").sendKeys("James Connors");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_username_TextBox, "present").sendKeys("Bryan Shaw");
 		
 		// Enter Ginger logon password
 		// TODO - Currently hardcoded, need to pull from credentials.json
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea103");
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea103");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea101");
 
 		// Click Sign In
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_SignIn_Button, "present").click();
@@ -882,11 +884,11 @@ public class Optimus_StepDefinitions {
 	@Then("^noddle main page is displayed$")
 	public void noddleMainPageIsDisplayed() throws Throwable {
 		
-//		if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.noddle_tsandcs_main_Header, 5)) {
-//			reporterHelper.log("Noddle T's and C's page displayed, clicking Continue");
-//			reporterHelper.takeScreenshot(driver, "General-Optimus_TsAndCs_Page_Displayed");
-//			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_generic_main_Continue_Button, "clickable").click();
-//		}
+		if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.noddle_tsandcs_main_Header, 5)) {
+			reporterHelper.log("Noddle T's and C's page displayed, clicking Continue");
+			reporterHelper.takeScreenshot(driver, "General-Optimus_TsAndCs_Page_Displayed");
+			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_generic_main_Continue_Button, "clickable").click();
+		}
 		
 		if(performSync)
 			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_account_summary_main_Header, "present");		
@@ -1014,6 +1016,84 @@ public class Optimus_StepDefinitions {
 		
 	}	
 
+//	@When("^a Consumer disputes an? \"(.*)\" data item$")
+//	public void aConsumerDisputesDataItemWithNoReason(String itemName) throws Throwable {
+//		
+//		//When a Consumer disputes a "single MODA" data item with reason "number of overdue payments are incorrect"
+//		
+//		// Select Appropriate Report Tab
+//		selectMyCreditReportTab(itemName);
+//		reporterHelper.takeScreenshot(driver, "General-Optimus_Report_Tab_Selected");
+//		
+//		// Identify Line Item and return WebElement representing the row
+//		WebElement selectedRowElement = fetchLineItem(itemName);
+//		
+//		// Click the line item to Expand
+//		selectedRowElement.click();
+//		reporterHelper.takeScreenshot(driver, "General-Optimus_Line_Item_Expanded");
+//		
+//		// Click the Dispute Link for the Line Item
+//		clickDisputeLink(selectedRowElement);
+//		reporterHelper.takeScreenshot(driver, "General-Optimus_Dispute_Link_Clicked");
+//		
+//		reporterHelper.log("HERE N1");
+//		// In the case of address disputes, if presented, selected first address radio button
+//		if(BrowserHelper.isElementDisplayed(driver, optimusLocatorLibrary.noddle_raiseDisputeModal_SelectAddressModel_Heading)) {
+//			reporterHelper.log("Select Address modal identified.  Selecting first address...");
+//			
+//			// Click first radio button
+//			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_raiseDisputeModal_SelectAddressModel_Address_RadioButton_Labels, "present").click();
+//			reporterHelper.log("HERE N2");
+//			// Click 'Use this address' button 
+//			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_raiseDisputeModal_SelectAddressModel_UseThisAddress_Button, "present").click();
+//			reporterHelper.log("HERE N3");
+//			
+//
+//		} 
+//
+//		// Sync on the Dispute Form
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_raiseDisputeModal_Title, "visible");	
+//
+//		// Check if there are two reasons to select from dropdown, indicated by : in the reasonName
+//		if(reasonName.contains(":")) {
+//			// Select Dispute Group Name from Drop-DOwn
+//			selectDisputeGroupName(reasonName.split(":")[0].trim());
+//			
+//			// Select Dispute Reason from Drop-Down
+//			selectDisputeReasonCode(reasonName.split(":")[1].trim());
+//			reporterHelper.takeScreenshot(driver, "General-Optimus_Dispute_Reason_Selected");
+//		} 
+//		
+//		// 
+//		else {
+//
+//			// Select Dispute Reason from Drop-Down
+//			selectDisputeReasonCode(reasonName);
+//			reporterHelper.takeScreenshot(driver, "General-Optimus_Dispute_Reason_Selected");
+//
+//		}
+//		
+//		
+//		// If confirmation radio box is present then select yes
+//		if (BrowserHelper.isElementDisplayed(driver, optimusLocatorLibrary.noddle_raiseDisputeModal_Yes_RadioButton)) {
+//			selectRaiseDisputeConfirmation(true);
+//			reporterHelper.takeScreenshot(driver, "General-Optimus_Confirmation_Radio_Selected");
+//		}
+//		
+//
+//		addSupportingInformation(reasonName);
+//		reporterHelper.takeScreenshot(driver, "General-Optimus_Supporting_Information_Added");
+//
+//		// Select Cancel Button
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_raiseDisputeModal_Cancel_Button, "visible").click();
+//		reporterHelper.takeScreenshot(driver, "General-Optimus_Raise_Disputed_Modal_Cancelled");
+//		
+//		// Select 'My Dashboard' from Secondary Navigation Panel
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_generic_header_secondaryNav_MyDashboard_Link, "visible").click();
+//		reporterHelper.takeScreenshot(driver, "General-Optimus_Returned_To_My_Dashboard");
+//		
+//	}	
+	
 	private void addSupportingInformation(String reasonName) {
 
 		// If date field is displayed then populate
