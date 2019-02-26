@@ -317,6 +317,22 @@ public class Hooks {
 		        chromeDriverOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		        chromeDriverOptions.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
 		        
+
+
+		        		        
+//String PROXY = "CIG\\JamesC:$Hannon19022@webproxy.services.cig.local:8080";
+String PROXY = "webproxy.services.cig.local:8080";
+System.out.println("Setting PROXY: " + PROXY);
+
+org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
+proxy.setHttpProxy(PROXY)
+     .setFtpProxy(PROXY)
+     .setSslProxy(PROXY);
+DesiredCapabilities cap = new DesiredCapabilities();
+chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
+
+
+
 			    driver = new ChromeDriver(chromeDriverOptions);
 			}
 			else if (browserName.equalsIgnoreCase("IE")) {

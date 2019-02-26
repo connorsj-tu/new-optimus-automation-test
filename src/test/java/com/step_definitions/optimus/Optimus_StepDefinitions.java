@@ -457,7 +457,7 @@ public class Optimus_StepDefinitions {
 		// Enter Ginger logon password
 		// TODO - Currently hardcoded, need to pull from credentials.json
 //		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea103");
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea101");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea104");
 
 		// Click Sign In
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_SignIn_Button, "present").click();
@@ -469,6 +469,8 @@ public class Optimus_StepDefinitions {
 
 		// Sync on Ginger Dashboard Heading
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_dashboard_Heading, "present");
+		
+//		BrowserHelper.customSleep(20 * 1000);
 	}
 	
 	@Then("^Credit Report is viewed in Ginger$")
