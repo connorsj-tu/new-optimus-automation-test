@@ -152,17 +152,19 @@ public class Optimus_StepDefinitions {
 		
 //		String tempString = setPersonaIdentifier(persona);
 		String tempString = persona;
-		
+	
+        // Enter Valid Password
+//      String tempPassword = Utils.getProperty("DEFAULT_PASSWORD");
+      String tempPassword = Hooks.getCredentials(tempString, "password");
+      BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_login_main_Password_TextBox, "clickable").sendKeys(tempPassword);
+      reporterHelper.log("Password entered Successfully: " + tempPassword);
+      
 		// Enter Valid Username
 		String tempUsername = Hooks.getCredentials(tempString, "user");
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_login_main_Username_TextBox, "clickable").sendKeys(tempUsername);
         reporterHelper.log("Username entered Successfully: " + tempUsername);
 
-        // Enter Valid Password
-//        String tempPassword = Utils.getProperty("DEFAULT_PASSWORD");
-        String tempPassword = Hooks.getCredentials(tempString, "password");
-        BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_login_main_Password_TextBox, "clickable").sendKeys(tempPassword);
-        reporterHelper.log("Password entered Successfully: " + tempPassword);
+
         
         reporterHelper.takeScreenshot(driver, "Login-Populated");
 	}
@@ -584,7 +586,7 @@ public class Optimus_StepDefinitions {
 			
 		} else {
 			// Open Numero URL
-			browserHelper.openURL("https://pllwininapp012.cig.local/numerointeractive");
+			browserHelper.openURL("https://optimus.st.optimus.cig.local/numerointeractive");
 		}
 		
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_emailAddress_TextBox, "present");
@@ -601,7 +603,7 @@ public class Optimus_StepDefinitions {
 		
 		// Enter Numero logon password
 		// TODO - Currently hardcoded, need to pull from credentials.json
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_password_TextBox, "present").sendKeys("$Hannon19012");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_password_TextBox, "present").sendKeys("$Hannon19022");
 
 		// Click Sign In
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_SignIn_Button, "present").click();

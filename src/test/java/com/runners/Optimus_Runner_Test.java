@@ -15,7 +15,7 @@ import cucumber.api.SnippetType;
 		
 //		tags = {"@optimus", "@positive", "~@wip", "~@ignore"},
 //        tags = {"@optimus", "~@wip", "~@ignore"},
-		tags = {"@optimus", "@ginger", "@login", "~@wip", "~@ignore"},
+		tags = {"@optimus", "@numero", "@login", "~@wip", "~@ignore"},
 //		tags = {"@optimus", "@basiccheck", "~@wip", "~@ignore"},
 //		tags = {"@optimus", "@numero", "~@login", "~@wip", "~@ignore"},
         		
