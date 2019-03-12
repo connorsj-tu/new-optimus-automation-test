@@ -17,7 +17,7 @@ import cucumber.api.SnippetType;
 //        tags = {"@optimus", "~@wip", "~@ignore"},
 //		tags = {"@optimus", "@numero", "@login", "~@wip", "~@ignore"},
 //		tags = {"@optimus", "@basiccheck", "~@wip", "~@ignore"},
-		tags = {"@optimus", "@login", "~@wip", "~@ignore"},
+		tags = {"@optimus", "@login", "~@numero", "~@wip", "~@ignore"},
         		
         snippets = SnippetType.CAMELCASE,
         plugin = {
