@@ -14,7 +14,7 @@ Feature: Optimus - Ginger - Regression
   Scenario: Log in to Ginger
 
 		Given the Ginger Sign In page is displayed
-  	When valid credentials are submitted to Ginger
+  	When a 'Ginger Admin Panel User' valid username and valid password are submitted to Ginger
     Then Ginger Dashboard is displayed
 
     
@@ -22,7 +22,7 @@ Feature: Optimus - Ginger - Regression
   Scenario: View Credit Report in Ginger
 
 		Given the Ginger Sign In page is displayed
-  	When valid credentials are submitted to Ginger
+  	When a 'Ginger Admin Panel User' valid username and valid password are submitted to Ginger
     Then Ginger Dashboard is displayed
 
 		Then Credit Report is viewed in Ginger
@@ -32,7 +32,7 @@ Feature: Optimus - Ginger - Regression
   Scenario: Create a Dispute in Ginger
 
 		Given the Ginger Sign In page is displayed
-  	When valid credentials are submitted to Ginger
+  	When a 'Ginger Admin Panel User' valid username and valid password are submitted to Ginger
     Then Ginger Dashboard is displayed
 
 		Then Credit Report is viewed in Ginger

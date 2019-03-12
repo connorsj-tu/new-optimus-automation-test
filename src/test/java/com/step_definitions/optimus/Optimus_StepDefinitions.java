@@ -147,7 +147,7 @@ public class Optimus_StepDefinitions {
 	}
 	
 	
-	@When("^a '(.*)' valid username and valid password are entered$")
+	@When("^a '(.*)' valid username and valid password are submitted to Noddle$")
 	public void aPersonaNameValidUsernameAndValidPasswordAreEntered(String persona) {
 		
 //		String tempString = setPersonaIdentifier(persona);
@@ -167,6 +167,9 @@ public class Optimus_StepDefinitions {
 
         
         reporterHelper.takeScreenshot(driver, "Login-Populated");
+        
+        theLoginButtonIsClicked("Login");
+
 	}
 
 	@When("^a valid username and a valid password are entered$")
@@ -358,10 +361,10 @@ public class Optimus_StepDefinitions {
 //        kalibrateHelper.syncAllPresentWidgets();
 		BrowserHelper.checkForConsoleErrors();
 		
-		reporterHelper.takeScreenshot(driver, "General-" + timerName + "_Initial_State");
+
 	}
 	
-	@Given("^the noddle home page is displayed$")
+	@Given("^the Noddle home page is displayed$")
 	public void theNoddleHomePageIsDisplayed() throws Throwable {
 
 		if(performSync)
@@ -392,7 +395,7 @@ public class Optimus_StepDefinitions {
 	}
 
 
-	@Then ("^User is returned to the home page$") 
+	@Then ("^User is returned to the Noddle home page$") 
 	public void userIsReturnedToTheHomePage() {
 		
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_home_main_Header_1, "visible");
@@ -406,8 +409,8 @@ public class Optimus_StepDefinitions {
 		BrowserHelper.checkForConsoleErrors();
 	}	
 	
-	@When("^the '(.*)' button is clicked in the header$")
-	public void theLogInButtonIsClickedInTheHeader(String buttonName) throws Throwable {
+	@When("^the '(.*)' button is clicked in the Noddle header$")
+	public void theLogInButtonIsClickedInTheNoddleHeader(String buttonName) throws Throwable {
 		
 		By tempBy = null;
 		
@@ -427,7 +430,7 @@ public class Optimus_StepDefinitions {
 		tempWebElement.click();
 	}
 	
-	@Then("^the 'Log In' page should be displayed$")
+	@Then("^the Noddle 'Log In' page should be displayed$")
 	public void theLogInPageShouldBeDisplayed() throws Throwable {
 		
 		if(performSync)
@@ -448,23 +451,27 @@ public class Optimus_StepDefinitions {
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_Heading, "present");
 	}
 
-	@When("^valid credentials are submitted to Ginger$")
-	public void validCredentialsAreSubmittedToGinger() throws Throwable {
 
-		// Enter Ginger logon email address
-		// TODO - Currently hardcoded, need to pull from credentials.json
-//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_username_TextBox, "present").sendKeys("James Connors");
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_username_TextBox, "present").sendKeys("Bryan Shaw");
+	
+	@When("^a '(.*)' valid username and valid password are submitted to Ginger$")
+	public void aPersonaNameValidUsernameAndValidPasswordAreSubmittedToGinger(String persona) {
 		
-		// Enter Ginger logon password
-		// TODO - Currently hardcoded, need to pull from credentials.json
-//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea103");
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys("Yorkshiretea104");
+		// Enter Valid Username
+		String tempUsername = Hooks.getCredentials(persona, "user");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_username_TextBox, "present").sendKeys(tempUsername);
+        reporterHelper.log("Ginger Username entered Successfully: " + tempUsername);
+
+        // Enter Valid Password
+		String tempPassword = Hooks.getCredentials(persona, "password");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_password_TextBox, "present").sendKeys(tempPassword);
+		reporterHelper.log("Ginger Password entered Successfully: " + tempPassword);
+      
+        reporterHelper.takeScreenshot(driver, "Login-Populated");
 
 		// Click Sign In
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ginger_logon_SignIn_Button, "present").click();
 
-	}
+	}	
 
 	@Then("^Ginger Dashboard is displayed$")
 	public void gingerDashboardIsDisplayed() throws Throwable {
@@ -594,16 +601,45 @@ public class Optimus_StepDefinitions {
 		
 	}
 
-	@When("^valid credentials are submitted to Numero$")
-	public void validCredentialsAreSubmittedToNumero() throws Throwable {
+//	@When("^valid credentials are submitted to Numero$")
+//	public void validCredentialsAreSubmittedToNumero() throws Throwable {
+//		
+//		// Enter Numero logon email address
+//		// TODO - Currently hardcoded, need to pull from credentials.json
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_emailAddress_TextBox, "present").sendKeys("james.connors@callcreditgroup.com");
+//		
+//		// Enter Numero logon password
+//		// TODO - Currently hardcoded, need to pull from credentials.json
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_password_TextBox, "present").sendKeys("$Hannon19022");
+//
+//		// Click Sign In
+//		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_SignIn_Button, "present").click();
+//
+//		// Check for 'User is logged in elsewhere' screen and progress is identified
+//		if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.numero_areYouAlready_confirm_checkbox, 5)) {
+//			reporterHelper.log("USer is logged in elsewhere' screen displayed, clicking checkbox and clicking Login");
+//			reporterHelper.takeScreenshot(driver, "Numero-Already_Logged_In-Initial_View");
+//			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_areYouAlready_confirm_checkbox, "clickable").click();
+//			reporterHelper.takeScreenshot(driver, "Numero-Already_Logged_In-Populated");
+//			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_areYouAlready_Login_Button, "clickable").click();
+//		}
+//		
+//	}
+	
+	@When("^a '(.*)' valid username and valid password are submitted to Numero$")
+	public void aPersonaNameValidUsernameAndValidPasswordAreSubmittedToNumero(String persona) {
 		
-		// Enter Numero logon email address
-		// TODO - Currently hardcoded, need to pull from credentials.json
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_emailAddress_TextBox, "present").sendKeys("james.connors@callcreditgroup.com");
-		
-		// Enter Numero logon password
-		// TODO - Currently hardcoded, need to pull from credentials.json
-		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_password_TextBox, "present").sendKeys("$Hannon19022");
+		// Enter Valid Username
+		String tempUsername = Hooks.getCredentials(persona, "user");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_emailAddress_TextBox, "present").sendKeys(tempUsername);
+        reporterHelper.log("Ginger Username entered Successfully: " + tempUsername);
+
+        // Enter Valid Password
+		String tempPassword = Hooks.getCredentials(persona, "password");
+		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_password_TextBox, "present").sendKeys(tempPassword);
+		reporterHelper.log("Ginger Password entered Successfully: " + tempPassword);
+      
+        reporterHelper.takeScreenshot(driver, "Login-Populated");
 
 		// Click Sign In
 		BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_logon_SignIn_Button, "present").click();
@@ -616,8 +652,9 @@ public class Optimus_StepDefinitions {
 			reporterHelper.takeScreenshot(driver, "Numero-Already_Logged_In-Populated");
 			BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.numero_areYouAlready_Login_Button, "clickable").click();
 		}
-		
-	}
+
+	}	
+	
 
 	@Then("^Numero main page is displayed$")
 	public void numeroMainPageIsDisplayed() throws Throwable {
@@ -885,7 +922,7 @@ public class Optimus_StepDefinitions {
 	}
 	
 	
-	@Then("^noddle main page is displayed$")
+	@Then("^Noddle main page is displayed$")
 	public void noddleMainPageIsDisplayed() throws Throwable {
 		
 		if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.noddle_tsandcs_main_Header, 5)) {
@@ -942,7 +979,7 @@ public class Optimus_StepDefinitions {
 	}
 
 		
-	@When("^a Consumer disputes an? \"(.*)\" data item with reason \"(.*)\"$")
+	@When("^a Consumer disputes an? Noddle \"(.*)\" data item with reason \"(.*)\"$")
 	public void aConsumerDisputesDataItemWithReason(String itemName, String reasonName) throws Throwable {
 		
 		//When a Consumer disputes a "single MODA" data item with reason "number of overdue payments are incorrect"
