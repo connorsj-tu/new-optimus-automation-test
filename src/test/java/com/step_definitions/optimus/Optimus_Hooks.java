@@ -212,13 +212,13 @@ public class Optimus_Hooks extends Hooks {
 			reporterHelper.log("\tBrowser is still open.  Checking if logged in...");
 	
 
-			if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.noddle_home_main_Header_1)) {
+			if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.ck_home_main_Header_1)) {
 				reporterHelper.log("\tOptimus home page indetified, no need to logout");
 			}
-			else if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.noddle_generic_header_LogOut_Button)) {
+			else if(BrowserHelper.isElementPresent(driver, optimusLocatorLibrary.ck_generic_header_LogOut_Button)) {
 				
 				// Logout 
-		        BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.noddle_generic_header_LogOut_Button, "present").click();
+		        BrowserHelper.syncOnElement(driver, optimusLocatorLibrary.ck_generic_header_LogOut_Button, "present").click();
 		        BrowserHelper.customSleep(1 * 1000);
 
 				

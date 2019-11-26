@@ -18,7 +18,7 @@ Feature: Optimus - Ginger - Regression
     Then Ginger Dashboard is displayed
 
     
-	@positive @regression
+	@positive @regression @james
   Scenario: View Credit Report in Ginger
 
 		Given the Ginger Sign In page is displayed

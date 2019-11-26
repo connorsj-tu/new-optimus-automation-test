@@ -13,11 +13,14 @@ Feature: Optimus - Numero - Regression
 	@positive @login
   Scenario: Log in to Numero
 
-		Given the Numero Sign In page is displayed
-  #	When valid credentials are submitted to Numero
-  	When a 'Numero Admin User' valid username and valid password are submitted to Numero
-    Then Numero main page is displayed
-    
+#		Given the Numero Sign In page is displayed
+#  #	When valid credentials are submitted to Numero
+#  	When a 'Numero Admin User' valid username and valid password are submitted to Numero
+#    Then Numero main page is displayed
+
+		Given the Numero Interactive URL is submitted
+		And any logon screens are navigated
+		Then Numero main page is displayed
 
 	@positive @regression
   Scenario: View Dispute in Numero

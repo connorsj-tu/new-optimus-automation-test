@@ -135,6 +135,9 @@ public class ReporterHelper {
     	case "FIREFOX":
     		browserExecutableName = "firefox.exe";
 			break;
+    	case "IE":
+    		browserExecutableName = "iexplore.exe";
+			break;
     	default:
     		customFailScript("Unknown BROWSER_NAME when attempting to define browser executable name for memory checker: " + Utils.getProperty("BROWSER_NAME"));
 		}

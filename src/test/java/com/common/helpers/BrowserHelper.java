@@ -346,7 +346,8 @@ public class BrowserHelper {
 			
 			if(!frameName.equalsIgnoreCase("default")) {
 				
-				tempWebElement = syncOnElement(driver, By.xpath(".//IFRAME[contains(@name, '" + frameName + "')] | .//IFRAME[contains(@id, '" + frameName + "')] | .//IFRAME[contains(@class, '" + frameName + "')]"), "default", "present");
+//				tempWebElement = syncOnElement(driver, By.xpath(".//IFRAME[contains(@name, '" + frameName + "')] | .//IFRAME[contains(@id, '" + frameName + "')] | .//IFRAME[contains(@class, '" + frameName + "')]"), "default", "present");
+				tempWebElement = syncOnElement(driver, By.xpath(".//frame[contains(@name, '" + frameName + "')] | .//frame[contains(@id, '" + frameName + "')] | .//frame[contains(@class, '" + frameName + "')]"), "default", "present");
 				
 
 				reporterHelper.log("\tAbout to switch to the identified frame: " + frameName);
@@ -362,6 +363,8 @@ public class BrowserHelper {
 
 		}
 	}
+	
+	
 	public static boolean isElementPresent (WebDriver driver, By by, String frameName, int retryAttempts) {
 		
 		switchToFrame(frameName);

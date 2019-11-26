@@ -42,6 +42,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Proxy.ProxyType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -279,9 +280,34 @@ public class Hooks {
 			}
 		}		
 		else { // NOT USE_GRID
+			
+	        // Check whether proxy required
+	        System.out.println("Checking whether Browser should use PROXY: " + Utils.getProperty("BROWSER_USE_PROXY"));
+	        String PROXY;
+			if(Boolean.parseBoolean(Utils.getProperty("BROWSER_USE_PROXY")))
+				PROXY = Utils.getProperty("BRPOWSER_PROXY_STRING");
+			else
+				PROXY = null;//Utils.getProperty("");
+			
+			System.out.println("Browser PROXY will be set to: " + PROXY);
+
+				
+				
 			if (browserName.equalsIgnoreCase("FIREFOX")) {
-				FirefoxOptions firefoxOptions = new FirefoxOptions(); 
-		        
+				FirefoxOptions firefoxOptions = new FirefoxOptions();
+
+				// Create Proxy object and set properties
+				org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
+				if(Boolean.parseBoolean(Utils.getProperty("BROWSER_USE_PROXY"))) {
+					proxy.setHttpProxy(PROXY)
+				     .setFtpProxy(PROXY)
+				     .setSslProxy(PROXY);
+
+				}
+				else
+					proxy.setProxyType(ProxyType.AUTODETECT);
+				
+				firefoxOptions.setProxy(proxy);
 				driver = new FirefoxDriver(firefoxOptions);
 			}
 			else if (browserName.equalsIgnoreCase("CHROME")) {
@@ -317,29 +343,61 @@ public class Hooks {
 		        chromeDriverOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		        chromeDriverOptions.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
 		        
+		        // Create Proxy object and set properties
+				org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
+				
+				if(Boolean.parseBoolean(Utils.getProperty("BROWSER_USE_PROXY"))) {
+					proxy.setHttpProxy(PROXY)
+				     .setFtpProxy(PROXY)
+				     .setSslProxy(PROXY);
 
+				}
+				else
+					proxy.setProxyType(ProxyType.AUTODETECT);
+				
+				
+				     
+//				proxy.setAutodetect(true);
+				
+//				proxy.isAutodetect();
+//				proxy.setProxyType(ProxyType.AUTODETECT);
+//				proxy.setNoProxy("");
+//				proxy.setHttpProxy("localhost:8888")
+//			     .setFtpProxy("localhost:8888")
+//			     .setSslProxy("localhost:8888");
+				System.out.println("JAMES");
+				
+				chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
+				chromeDriverOptions.setProxy(proxy);
 
-		        		        
-//String PROXY = "CIG\\JamesC:$Hannon19022@webproxy.services.cig.local:8080";
-String PROXY = "webproxy.services.cig.local:8080";
-System.out.println("Setting PROXY: " + PROXY);
-
-org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
-proxy.setHttpProxy(PROXY)
-     .setFtpProxy(PROXY)
-     .setSslProxy(PROXY);
-DesiredCapabilities cap = new DesiredCapabilities();
-chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
-
-
-
-			    driver = new ChromeDriver(chromeDriverOptions);
+				driver = new ChromeDriver(chromeDriverOptions);
 			}
 			else if (browserName.equalsIgnoreCase("IE")) {
-				
-				DesiredCapabilities ieDc = DesiredCapabilities.internetExplorer();
 
+				DesiredCapabilities ieDc = DesiredCapabilities.internetExplorer();
+				
+
+				org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
+				if(Boolean.parseBoolean(Utils.getProperty("BROWSER_USE_PROXY"))) {
+					proxy.setHttpProxy(PROXY)
+				     .setFtpProxy(PROXY)
+				     .setSslProxy(PROXY);
+
+				}
+				else
+					proxy.setProxyType(ProxyType.AUTODETECT);
+				
+//				proxy.setNoProxy("DIRECT");
+				
+//				ieDc.setCapability(CapabilityType.ForSeleniumServer.AVOIDING_PROXY, true);
+//				ieDc.setCapability(CapabilityType.ForSeleniumServer.ONLY_PROXYING_SELENIUM_TRAFFIC, true);
+//				ieDc.setCapability(CapabilityType.ForSeleniumServer.PROXYING_EVERYTHING, false);
+//				ieDc.setCapability("ie.usePerProcessProxy", true);
+//				ieDc.setCapability("ie.setProxyByServer", true);
+				ieDc.setCapability(CapabilityType.PROXY, proxy);
+				
 				ieDc.setCapability(InternetExplorerDriver.NATIVE_EVENTS, false);
+				
 
 				driver = new InternetExplorerDriver(ieDc);
 			}
@@ -533,9 +591,9 @@ chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
 		// Launch Application        
 	    driver.get("about:blank");
 
-	    reporterHelper.log("navigating to applicaiton...");
-	    reporterHelper.startTimer("Launch Application: " + applicationName);
-	    driver.get(applicationURL);
+//	    reporterHelper.log("navigating to applicaiton...");
+//	    reporterHelper.startTimer("Launch Application: " + applicationName);
+//	    driver.get(applicationURL);
 	    
 	}
 
@@ -1226,11 +1284,23 @@ chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
     	JSONObject credsJsonObject = null;
     	boolean success = false;
     	String returnString  = "";
-    	
-    	String personaFilePath =  Utils.getProperty("CREDENTIALS_FILE_PATH");
-    	
-    	System.out.println("personaFilePath: '" + personaFilePath + "'");
 
+    	String environmentName =  Utils.getProperty("ENVIRONMENT");
+    	System.out.println("environment: '" + environmentName + "'");
+
+    	String compositePersonaName;
+    	
+    	if(environmentName.length() == 0)
+    		compositePersonaName = personaName;
+    	else
+    		compositePersonaName = environmentName + "_" + personaName;
+    	
+    			
+    	String personaFilePath =  Utils.getProperty("CREDENTIALS_FILE_PATH");
+
+    	System.out.println("Looking for credentials for persona " + compositePersonaName + " in credentials file: " + personaFilePath);
+    	System.out.println();
+    	
     	if(!(StringUtils.trimToNull(personaFilePath) == null) ) {
     		
     		FileReader fr = null;
@@ -1244,6 +1314,7 @@ chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
 			    {
 			    	System.out.println(line);
 			    }
+			    System.out.println();
 			    reader.close();
 			    
 			    fr = new FileReader(personaFilePath);
@@ -1272,7 +1343,6 @@ chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
 	    		
     	    JSONArray usersArray = jsonObject.getJSONArray("users");
 
-    	    System.out.println("Looking for credentials for persona " + personaName + " in credentials file: " + personaFilePath);
     	    		
     	    for (int i = 0; i < usersArray.length(); i++) {
     	        JSONObject jsonObjectRow = (JSONObject) usersArray.get(i);
@@ -1280,7 +1350,7 @@ chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
     	        
     	        System.out.println("credsPersona: " + credsPersona);
     	        
-    	        if(credsPersona.equalsIgnoreCase(personaName)) {
+    	        if(credsPersona.equalsIgnoreCase(compositePersonaName)) {
     	        	credsJsonObject = jsonObjectRow;
     	        	
     	        	System.out.println("\nCredentials JSON Object identified in creds file: " + credsJsonObject.toString());
@@ -1291,14 +1361,14 @@ chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
     	    }
 	
 	    	if(!success) {
-	    		System.out.println("unable to find credentials for persona '" + personaName + "' in credentials file: " + personaFilePath);
+	    		System.out.println("unable to find credentials for persona '" + compositePersonaName + "' in credentials file: " + personaFilePath);
 	    		Assert.fail();
 	    	}
 	    	
 	    	returnString = credsJsonObject.getString(credsField);
     	} else {
-    		if(credsField.equalsIgnoreCase("user")) 
-    			returnString = System.getenv("COMPUTERNAME") + "_" + personaName + "_" + Utils.getProperty("AUTO_RUNNER_IDENTIFIER");
+    		if(credsField.equalsIgnoreCase("username")) 
+    			returnString = System.getenv("COMPUTERNAME") + "_" + compositePersonaName + "_" + Utils.getProperty("AUTO_RUNNER_IDENTIFIER");
     		else if(credsField.equalsIgnoreCase("password"))
     			returnString = System.getenv("DEFAULT_PASSWORD");
     	}
