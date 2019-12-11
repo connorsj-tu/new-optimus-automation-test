@@ -1,0 +1,60 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/createCases</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <createCases xmlns="http://tempuri.org/">
+      <casesInfo>
+        <BizAgiWSParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+          <domain>******</domain>
+          <userName>******</userName>
+          <Cases>
+            <Case>
+              <Process>Disputes</Process>
+              <Entities>
+                <CallCredit>
+                  <Dispute>
+                    <IsAutomatic>1</IsAutomatic>
+                    <DateReceived>2018-05-17</DateReceived>
+                    <DisputeId>3721718</DisputeId>
+                    <CCCDisputeType>507</CCCDisputeType>
+                    <CCCAffiliateID>501</CCCAffiliateID>
+                    <ConsumerRequest>Dispute detail data: INSOLVENCYORDERId: 1712855
+COURTNAME: TESTTOWN
+CURRENTSTATUS: D
+ORDERTYPE: BO
+ORDERDATE: 05/05/2012 00:00:00
+CASEYEAR: 2005
+CASEREF: 410031
+NAME: MRS DEBBIE BOSCH
+ADDRESS: 63 THE RIDGE SK6 7ER
+
+</ConsumerRequest>
+                    <CCCCustomerID>200021</CCCCustomerID>
+                          <ResidenceID>169068281</ResidenceID>
+                    <Name>
+                      <TitleOther>MRS</TitleOther>
+                      <Forename>DEBBIE</Forename>
+                      <Surname>BOSCH</Surname>
+                    </Name>
+                    <DoB>03/01/1990</DoB>
+                    <UKAddress>
+                      <Abode />
+                      <HouseName />
+                      <HouseNumber>63</HouseNumber>
+                      <Street1>THE RIDGE</Street1>
+                      <Street2 />
+                      <Town>STOCKPORT</Town>
+                      <PostCode>SK6 7ER</PostCode>
+                    </UKAddress>
+                    <CCCInsolvencyOrderID>1712855</CCCInsolvencyOrderID>
+                  </Dispute>
+                </CallCredit>
+              </Entities>
+            </Case>
+          </Cases>
+        </BizAgiWSParam>
+      </casesInfo>
+    </createCases>
+  </s:Body>
+</s:Envelope>

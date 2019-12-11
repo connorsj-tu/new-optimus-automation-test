@@ -1,0 +1,60 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/createCases</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <createCases xmlns="http://tempuri.org/">
+      <casesInfo>
+        <BizAgiWSParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+          <domain>******</domain>
+          <userName>******</userName>
+          <Cases>
+            <Case>
+              <Process>Disputes</Process>
+              <Entities>
+                <CallCredit>
+                  <Dispute>
+                    <IsAutomatic>1</IsAutomatic>
+                    <DateReceived>2018-01-23</DateReceived>
+                    <DisputeId>2437436</DisputeId>
+                    <CCCDisputeType>101</CCCDisputeType>
+                    <CCCAffiliateID>501</CCCAffiliateID>
+                    <ConsumerRequest>Dispute Text:  test
+Address link address: 63 The Ridge, Stockport SK6 7ER
+Dispute detail data: Selected Address: 63 The Ridge, Stockport SK6 7ER
+Address 1: 61 The Ridge, Stockport SK6 7ER
+Address 2: 63 The Ridge, Stockport SK6 7ER
+Link Creation Date: 01/01/2004 00:00:00
+Link Last Conf Date: 01/01/2004 00:00:00
+Link Supplier Name: Test Lender
+ADD Link ID:81281449
+
+</ConsumerRequest>
+                    <CCCCustomerID>${#TestCase#CCCCustomerID}</CCCCustomerID>
+                    <ResidenceID>${#TestCase#ResidenceID}</ResidenceID>
+                    <Name>
+                      <TitleOther>${#TestCase#TitleOther}</TitleOther>
+                      <Forename>${#TestCase#Forname}</Forename>
+                      <Surname>${#TestCase#Surname}</Surname>
+                    </Name>
+                    <DoB>${#TestCase#DoB}</DoB>	
+                    <UKAddress>
+                      <Abode />
+                      <HouseName />
+                      <HouseNumber>61</HouseNumber>
+                      <Street1>The Ridge</Street1>
+                      <Street2 />
+                      <Town>Stockport</Town>
+                      <PostCode>${#TestCase#PostCode}</PostCode>
+                    </UKAddress>
+                    <CCCAddressLinkID>81281449</CCCAddressLinkID>
+                  </Dispute>
+                </CallCredit>
+              </Entities>
+            </Case>
+          </Cases>
+        </BizAgiWSParam>
+      </casesInfo>
+    </createCases>
+  </s:Body>
+</s:Envelope>

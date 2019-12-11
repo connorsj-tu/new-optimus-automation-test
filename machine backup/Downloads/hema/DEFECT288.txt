@@ -1,0 +1,126 @@
+ '''Connect to the Bureau Server'''
+!path lib/*.jar
+!|dbfit.SqlServerTest                                                           |
+|Connect|data source=${BureauServer};database=CCRMain;Integrated Security = True|
+
+''' Generate LoadId & ProcessId For Manual Amendments '''
+!include -c .CodeStubs.JobControlSystem.StrategicDataQualityAndDataServices.GenerateLoadIdAndProcessId.BaseLoad1
+ 
+ 
+ ----------------------------- Create required data in Bureau tables ----------------------------------------
+
+!| Execute | Use CCRMain |
+
+ 
+ 
+!| Insert    |dbo.Locality                                                         |
+|LocalityId? |SubLocality|Locality  |Town      |Deleted|CLoadId      |ULoadId      |
+|>>LocalityId|blank      |HALIFAX |WEST YORKSHIRE  |FALSE  |<<BaseLoadId1|<<BaseLoadId1|
+
+!| Insert      |dbo.Domicile                                                                                                                                                                             |
+|DomicileId?   |PafStatus   |POBox|Abode|HouseNum|HouseName|Street1            |Street2   |LocalityId  |Postcode|csPostcode|DPS|BFPO     |Deleted|CLoadId      |CSrcId|ULoadId      |USrcId|UProcId      |
+|>>DomicileId1 |PXYXXTA000A9|blank|blank|8       |CLARE COURT    |PRESCOTT STREET     |blank     |<<LocalityId|HX1 2QA |1224815872|1Y |FALSE    |FALSE  |<<BaseLoadId1|1     |<<BaseLoadId1|1     |<<BaseLoadId1|
+
+
+'''This is because DBFit uses @@Indenity instead of Scope_Indentity and each Domicile insert will fire a trigger inserts MatchingKey rows'''
+
+!| Query      |Select DomicileId FROM Domicile WHERE CLoadId = @BaseLoadId1 ORDER BY DomicileId|
+|DomicileId?                                                                              |
+|>>DomicileId1                                                                            |
+
+
+
+!| Insert    |dbo.Person                                                                                                                                       |
+|PersonId?   |TitleId|NameSuffixId|Surname   |Forename  |Othername|Sex|Deleted|CLoadId      |CSrcId|ULoadId      |USrcId|UProcId      |DoBirth   |IndividualId    |
+|>>PersonId1 |3      |15          |FISH     |NEMO      |blank    |F  |FALSE  |<<BaseLoadId1|1     |<<BaseLoadId1|1     |<<BaseLoadId1|15/07/1991|NULL |
+
+
+!| Query|Select PersonId FROM Person WHERE CLoadId = @BaseLoadId1 ORDER BY PersonId|
+|PersonId?                                                                    |
+|>>PersonId1                                                                  |
+
+
+'''This is because DBFit uses @@Indenity instead of Scope_Indentity and a each Residence insert will fire a trigger inserts MatchingKey rows'''
+
+
+!| Insert       |dbo.Residence                                                                                                                  |
+|ResidenceId?   |PersonId    |DomicileId   |DateMoveIn|DateMoveOut|HouseholdComp|Deleted|CLoadId      |CSrcId|ULoadId      |USrcId|UProcId      |
+|>>ResidenceId1 |<<PersonId1 |<<DomicileId1|01/01/2010|NULL       |NULL         |FALSE  |<<BaseLoadId1|1     |<<BaseLoadId1|1     |<<BaseLoadId1|
+
+
+
+!| Query|Select ResidenceId FROM Residence WHERE CLoadId = @BaseLoadId1 ORDER BY ResidenceId|
+|ResidenceId?                                                                          |
+|>>ResidenceId1                                                                        |
+
+
+!|Insert |dbo.ER                                                                                                   |
+|ERId?   |ResidenceId    |StartDate|EndDate  |Sequence|Rolling|OptOut|Deleted|CLoadId |CSrcId|ULoadId |USrcId|UProcId|
+|>>ERId1 |<<ResidenceId1 |01/02/01 |NULL     |1       |FALSE  |TRUE  |FALSE  |<<BaseLoadId1|1     |<<BaseLoadId1|1     |NULL   |
+
+
+!|Query|Select ERId FROM dbo.ER WHERE CLoadId = @BaseLoadId1 ORDER BY ERId|
+|ERId?                                                               |
+|>>ERId1                                                             |
+
+
+!|Insert|dbo.ERSrc                                                                                                                                                     |
+|ED_URN |ERId    |OptOutFlag|SrcTitle|SrcForename|SrcOthername|SrcSurname   |SrcSuffix|SrcAddress                        |SrcPostcode|SrcDOB    |ERYear|LoadId       |SrcId|
+|1      |<<ERId1 |Y         |MRS     |NEMO       |blank       |FISH        |2        |8 CLARE COURT, PRESCOTT STREET    |HX1 2QA    |15/07/1991|2005  |<<BaseLoadId1|1    |
+
+
+
+!|insert              |dbo.InsolvencyOrder                                                                                                                                                                                                                                               |
+|InsolvencyOrderId?   |InsolvencyOrderTypeId|InsolvencyServiceCaseId|ResidenceId    |OrderDate |RestrictionsTypeId|RestrictionsStartDate|RestrictionsEndDate|LineOfBusiness|ValueOfDebt|ValueOfAssets|Aged |MaxSequenceNum|CLoadId      |CSrcId|ULoadId      |USrcId|DischargeDate|OnlineSuppressed|
+|>>InsolvencyOrderId1 |1                    |-1                     |<<ResidenceId1 |2018-07-31|NULL              |2017-07-31           |2019-07-31         |blank         |NULL       |NULL         |FALSE|1             |<<BaseLoadId1|1     |<<BaseLoadId1|1     |2018-07-31   |FALSE           |
+
+
+!|Query|Select TOP 4 InsolvencyOrderId FROM dbo.InsolvencyOrder WHERE CLoadId = @BaseLoadId1 ORDER BY InsolvencyOrderId DESC |
+|InsolvencyOrderId?                                                                                         |
+|>>InsolvencyOrderId1                                                                                       |
+
+
+!|insert                     |dbo.InsolvencyOrderAddress                                                                                          |
+|InsolvencyOrderAddressId?   |InsolvencyOrderId    |DomicileId   |SequenceNum|LastKnownAddress                     |LastKnownPostCode|CLoadId       |CSrcId|ULoadId      |USrcId|
+|>>InsolvencyOrderAddressId1 |<<InsolvencyOrderId1 |<<DomicileId1|1          |8 CLARE COURT PRESCOTT STREET HALIFAX|HX1 2QA          |<<BaseLoadId1 |1     |<<BaseLoadId1|1     |
+
+
+
+!|insert                    |dbo.InsolvencyOrderPerson                                                                                                    |
+|InsolvencyOrderPersonId?   |InsolvencyOrderId    |PersonId    |Title|Forename|MiddleName|Surname  |DateOfBirth|SequenceNum|CLoadId      |CSrcId|ULoadId      |USrcId|
+|>>InsolvencyOrderPersonId1 |<<InsolvencyOrderId1 |<<PersonId1 |Mrs  |NEMO    |BLANK     |BERRY    |1991-08-15 |1          |<<BaseLoadId1|1     |<<BaseLoadId1|1     |
+
+
+
+
+!|insert                     |dbo.InsolvencyOrderHistory                                                                                             |
+|InsolvencyOrderHistoryId?   |InsolvencyOrderId    |InsolvencyOrderStatusId |CourtId|CaseReference     |CaseYear|SequenceNum   |CLoadId      |CSrcId|ULoadId      |USrcId|
+|>>InsolvencyOrderHistoryId1 |<<InsolvencyOrderId1 |1                       |294    |<<BaseLoadId1     |2017    |1             |<<BaseLoadId1|1     |<<BaseLoadId1|1     |
+
+!|insert      |dbo.CCJCase                                                                                                                                        |
+|CCJCaseId?   |CourtId|PersonsInvolved|CaseNumber|CCJTypeId|Country|Deleted|CLoadId      |CSrcId|ULoadId      |USrcId|UProcId      |CaseKey        |Displayed|HCJ |
+|>>CCJCaseId1 |123    |S              |ABC115    |1        |blank  |FALSE  |<<BaseLoadId1|1     |<<BaseLoadId1|1     |<<BaseLoadId1|201801020000115|TRUE     |NULL|
+
+!|Query|Select CCJCaseId FROM dbo.CCJCase WHERE CLoadId = @BaseLoadId1 ORDER BY CCJCaseId|
+|CCJCaseId?                                                                         |
+|>>CCJCaseId1                                                                       |
+
+!|insert         |dbo.CCJCasePerson                                                                                                                |
+|CCJCasePerId?   |CCJCaseId    |ResidenceId    |CurrentStatus|CLoadId      |CSrcId|ULoadId      |USrcId|UProcId      |Deleted|Displayed|DefendantId|
+|>>CCJCasePerId1 |<<CCJCaseId1 |<<ResidenceId1 |JG           |<<BaseLoadId1|1     |<<BaseLoadId1|1     |<<BaseLoadId1|FALSE  |TRUE     |12344321   |
+
+!|Query|Select CCJCasePerId FROM dbo.CCJCasePerson WHERE CLoadId = @BaseLoadId1 ORDER BY CCJCasePerId|
+|CCJCasePerId?                                                                                  |
+|>>CCJCasePerId1                                                                                |
+
+
+!|insert  |dbo.CCJ                                                                                                                                                                                                                                                                                                                    |
+|CCJId?   |CCJStatus|Title|Forename|Surname  |TradingName|Address                                           |JudgementAmount|Other1|Other2|FilmNum|ImageNum|CameraNum|Deleted|CLoadId      |CSrcId|ULoadId      |USrcId|UProcId      |CCJCasePerId    |JudgeDate          |SatCancDate        |Displayed|DoBirth            |Othername|
+|>>CCJId1 |JG       |MRS  |NEMO   |FISH    |blank      |8 CLARE COURT PRESCOTT STREET HALIFAX HX1 2QA      |50             |BLANK |BLANK |1      |1       |1        |FALSE  |<<BaseLoadId1|1     |<<BaseLoadId1|1     |<<BaseLoadId1|<<CCJCasePerId1 |20-01-2017 00:00:00|20-01-2018 00:00:00|TRUE     |15-07-1991 00:00:00|blank    |
+
+
+
+!| commit|
+
+
+
