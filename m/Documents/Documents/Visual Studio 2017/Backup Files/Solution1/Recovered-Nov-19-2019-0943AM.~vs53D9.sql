@@ -1,1 +1,0 @@
-select * from [Primary1].[dbo].[tblAddressLinkDispute]  
