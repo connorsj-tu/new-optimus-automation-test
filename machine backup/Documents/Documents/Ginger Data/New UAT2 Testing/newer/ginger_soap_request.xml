@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Header>
+      <VsDebuggerCausalityData xmlns="http://schemas.microsoft.com/vstudio/diagnostics/servicemodelsink">uIDPo+prXWLklANNuAkGDHlgkXkAAAAAJz6wSlw1KU+2BoZtQW6sRohtv/qejcdKpDHTA3woonYACQAA</VsDebuggerCausalityData>
+   </s:Header>
+   <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <createCases xmlns="http://tempuri.org/">
+         <casesInfo>
+            <BizAgiWSParam xmlns="">
+               <domain>domain</domain>
+               <userName>admon</userName>
+               <Cases>
+                  <Case>
+                     <Process>Disputes</Process>
+                     <Entities>
+                        <CallCredit>
+                           <Dispute>
+                              <IsAutomatic>1</IsAutomatic>
+                              <DateReceived>2019-08-27</DateReceived>
+                              <DisputeId>9485302</DisputeId>
+                              <CCCDisputeType>1222</CCCDisputeType>
+                              <CCCAffiliateID>539</CCCAffiliateID>
+                              <ConsumerRequest>Dispute Text:  test Dispute detail data: Supplier Name: HALIFAX Acc Holder Name: MRS KELLY MASSEY 1 Acc Holder Address: 8 CLARE COURT, PRESCOTT STREET HX1 2QA Date of Birth: 18/09/1980 00:00:00 Status Code: N Acc Number: ***************567 Acc Suffix: 1 Joint: 0 Status: N Date Updated: 01/01/2018 00:00:00 Acc Type Code: MG Acc Group ID: 2</ConsumerRequest>
+                              <CCCCustomerID>9086737</CCCCustomerID>
+                              <ResidenceID>219263611</ResidenceID>
+                              <Name>
+                                 <TitleOther>MRS</TitleOther>
+                                 <Forename>KELLY</Forename>
+                                 <Surname>MASSEY</Surname>
+                              </Name>
+                              <DoB>1980-09-18</DoB>
+                              <UKAddress>
+                                 <HouseName>Test COURT</HouseName>
+                                 <HouseNumber>83</HouseNumber>
+                                 <Street1>Test STREET</Street1>
+                                 <Town>WEST YORKSHIRE</Town>
+                                 <PostCode>LS25 2NR</PostCode>
+                              </UKAddress>
+                              <CCCMemberPortID>288</CCCMemberPortID>
+                              <CCCAccountID>100001833</CCCAccountID>
+                              <CCCShAccHolderID>100001634</CCCShAccHolderID>
+                              <UserID>47907165-94e8-47c7-9600-6557ec7930fc</UserID>
+                              <UserEmail>TUVeryLow@mail.com</UserEmail>
+                           </Dispute>
+                        </CallCredit>
+                     </Entities>
+                  </Case>
+               </Cases>
+            </BizAgiWSParam>
+         </casesInfo>
+      </createCases>
+   </s:Body>
+</s:Envelope>

@@ -1,0 +1,204 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <Search07aResponse xmlns="urn:callcredit.co.uk/soap:callreport7">
+         <SearchResult>
+            <jobdetails>
+               <searchid>{514AB1E4-197E-4387-899C-5F2C47013070}</searchid>
+               <cast>030.007.7.2.1.2.0.50829274.0</cast>
+               <pstv>50829274</pstv>
+               <ls>0</ls>
+               <searchdate>2019-06-06T11:58:31</searchdate>
+            </jobdetails>
+            <creditrequest schemaversion="7.1" datasets="255">
+               <idoutput>1</idoutput>
+               <logscore>1</logscore>
+               <applicant>
+                  <address>
+                     <buildingno>19</buildingno>
+                     <postcode>SK6 7JQ</postcode>
+                  </address>
+                  <name>
+                     <forename>BECKY</forename>
+                     <surname>SATSUMA</surname>
+                  </name>
+                  <dob>1988-12-18</dob>
+               </applicant>
+               <score>0</score>
+               <purpose>CL</purpose>
+            </creditrequest>
+            <picklist maxaddressitems="20" maxnameitems="9" picklist="1" regenerated="0">
+               <applicant id="1" reporttype="3">
+                  <address addressid="1">
+                     <addressinput>
+                        <abodeno/>
+                        <buildingno>19</buildingno>
+                        <buildingname/>
+                        <street1/>
+                        <street2/>
+                        <sublocality/>
+                        <locality/>
+                        <posttown/>
+                        <postcode>SK6 7JQ</postcode>
+                     </addressinput>
+                     <fullmatches reporttype="3" matchstatus="2">
+                        <fullmatch selected="1">
+                           <addressmatch>
+                              <buildingno>19</buildingno>
+                              <street1>UPPER HIBBERT LANE</street1>
+                              <locality>STOCKPORT</locality>
+                              <posttown>CHESHIRE</posttown>
+                              <postcode>SK6 7JQ</postcode>
+                              <domicileid>41394852</domicileid>
+                           </addressmatch>
+                           <name nameid="1">
+                              <nameinput>
+                                 <title/>
+                                 <forename>BECKY</forename>
+                                 <othernames/>
+                                 <surname>SATSUMA</surname>
+                              </nameinput>
+                              <namematches reporttype="3" matchstatus="2">
+                                 <namematch selected="1">
+                                    <title>MRS</title>
+                                    <forename>BECKY</forename>
+                                    <surname>SATSUMA</surname>
+                                    <residenceid>292592572</residenceid>
+                                    <dob>1988-12-18</dob>
+                                 </namematch>
+                              </namematches>
+                           </name>
+                        </fullmatch>
+                     </fullmatches>
+                  </address>
+               </applicant>
+            </picklist>
+            <creditreport searchid="{514AB1E4-197E-4387-899C-5F2C47013070}" linktype="0">
+               <applicant reporttype="3" tpoptout="0" ageflag="3" reporttitle="BECKY SATSUMA ">
+                  <addressconfs>
+                     <addressconf pafvalid="1" otherresidents="1">
+                        <address current="1">19 UPPER HIBBERT LANE, STOCKPORT, CHESHIRE SK6 7JQ</address>
+                        <resident matchtype="IM" currentname="1" declaredalias="0" IndividualType="Individual: Current Name" SameFamilyType="Non Same Family resident" AssociateType="Non Associate resident">
+                           <residenceid>292592572</residenceid>
+                           <name>BECKY SATSUMA</name>
+                           <duration>P232M</duration>
+                           <startdate>2000-02-01</startdate>
+                           <ervalid>1</ervalid>
+                           <erhistory>
+                              <erid>288661623</erid>
+                              <startdate>2000-02-01</startdate>
+                              <optout>1</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>278938402</erid>
+                              <startdate>2017-04-01</startdate>
+                              <enddate>2018-06-01</enddate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                        </resident>
+                     </addressconf>
+                  </addressconfs>
+                  <judgments>
+                     <judgment>
+                        <ccjcaseperid>18837628</ccjcaseperid>
+                        <name>MS CLAIRE RUSSELL</name>
+                        <address current="1">12 THORNYCROFT ROAD, LIVERPOOL, L15 0EW</address>
+                        <courtname>HOLYWELL</courtname>
+                        <courttype>0</courttype>
+                        <casenumber>ABC115</casenumber>
+                        <status>JG</status>
+                        <amount>699</amount>
+                        <judgmentdate>2018-10-31</judgmentdate>
+                     </judgment>
+                  </judgments>
+                  <bais>
+                     <bai>
+                        <insolvencyorderid>6095739</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <amount>150</amount>
+                        <ordertype>AO</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mrs BECKY SATSUMA</name>
+                        <address current="1">19 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095757</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>BO</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mrs BECKY SATSUMA</name>
+                        <address current="1">19 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095775</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>DA</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mrs BECKY SATSUMA</name>
+                        <address current="1">19 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095793</insolvencyorderid>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>DR</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mrs BECKY SATSUMA</name>
+                        <address current="1">19 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095811</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>FT</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mrs BECKY SATSUMA</name>
+                        <address current="1">19 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                  </bais>
+                  <searches>
+                     <search>
+                        <searchref>{BA0B03FD-04E5-4E30-969A-B9BF779C2893}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>nikki+f06</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-06T11:54:41</searchdate>
+                        <name>miss becky satsuma</name>
+                        <address current="1">19, sk6 7jq</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                  </searches>
+                  <addresslinks/>
+                  <aliaslinks/>
+                  <associatelinks/>
+                  <cifas/>
+                  <rtr/>
+                  <accs/>
+               </applicant>
+            </creditreport>
+         </SearchResult>
+      </Search07aResponse>
+   </soap:Body>
+</soap:Envelope>

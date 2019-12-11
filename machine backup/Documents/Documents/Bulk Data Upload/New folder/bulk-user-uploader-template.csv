@@ -1,0 +1,10 @@
+SupplierId,SupplierName,GivenName,Surname,Role,ContactAddress,TelephoneNumber,Portfolios,DisputeTypes,AccessToFraudRelatedDisputes
+123,Supplier A,Deborah,Reid,SupplierSuperUser,deborahreid636741849426064621@gmail.com,7453123456,,,no
+123,Supplier A,Virginia,Wood,PortalUser,virginiawood636741849426112916@gmail.com,7453123456,"987,654,321","Share,MODA,Alias Link,Address Link,Search",yes
+123,Supplier A,Henry,Lloyd,PortalManager,henrylloyd636741849426119694@gmail.com,,"987,654,321","Share,MODA,Alias Link,Address Link,Search",yes
+456,Supplier B,Cheryl,Wilkinson,SupplierSuperUser,cherylwilkinson636741849426122235@gmail.com,7453123456,,,no
+456,Supplier B,Madison,Williams,PortalUser,madisonwilliams636741849426122872@gmail.com,7453123456,"987,654,321","Share,MODA,Alias Link,Address Link,Search",yes
+456,Supplier B,Heather,Knight,PortalManager,heatherknight636741849426123420@gmail.com,7453123456,"987,654,321","Share,MODA,Alias Link,Address Link,Search",yes
+789,Supplier C,Timothy,Carter,SupplierSuperUser,timothycarter636741849426123986@gmail.com,7453123456,,,yes
+789,Supplier C,Jane,Jones,PortalUser,janejones636741849426124950@gmail.com,,"987,654,321","Share,MODA,Alias Link,Address Link,Search",yes
+789,Supplier C,Angela,Kaur,PortalManager,angelakaur636741849426125479@gmail.com,7453123456,"987,654,321","Share,MODA,Alias Link,Address Link,Search",yes

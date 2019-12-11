@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Search07aResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SearchResult>
+		<jobdetails xmlns="urn:callcredit.co.uk/soap:callreport7">
+			<searchid>{9AFB0D9D-2B44-4203-9FCD-45D04A635DAE}</searchid>
+			<cast>005.020.7.2.1.1.0.5927103.0</cast>
+			<pstv>5927103</pstv>
+			<ls>0</ls>
+			<searchdate>2018-09-27T15:24:19</searchdate>
+		</jobdetails>
+		<payload xmlns="urn:callcredit.co.uk/soap:callreport7">
+			<scorecardlog xmlns="urn:callcredit.plc.uk/scorecard" searchid="{9AFB0D9D-2B44-4203-9FCD-45D04A635DAE}" linktype="0" scorerequesttype="3">
+				<inputapplicant>
+					<Age>54</Age>
+					<BB_S1>1</BB_S1>
+					<BF_S1>C</BF_S1>
+					<WBC_A1 />
+					<WBC_AD1 />
+					<BSB_S1>230</BSB_S1>
+					<C_S1>1</C_S1>
+					<XBC_AD1 />
+					<XBC_S1>0</XBC_S1>
+					<DD_S1>0</DD_S1>
+					<YBC_A1 />
+					<YBC_S1>0</YBC_S1>
+					<DTB_S1>-999997</DTB_S1>
+					<E_S1>1</E_S1>
+					<EB_A1>0</EB_A1>
+					<EB_A2>0</EB_A2>
+					<EB_S1>1</EB_S1>
+					<EM_S1>100</EM_S1>
+					<F>0</F>
+					<FB_AD1>0</FB_AD1>
+					<FB_S1>1</FB_S1>
+					<FM_A1>0</FM_A1>
+					<FM_A2>0</FM_A2>
+					<FM_S1>-999997</FM_S1>
+					<GC_S1>I1</GC_S1>
+					<GG_S1>230</GG_S1>
+					<GSB_S1>-999997</GSB_S1>
+					<IDB_S1>-999997</IDB_S1>
+					<IG_S1>0</IG_S1>
+					<IG_SP1>0</IG_SP1>
+					<JN_A1>0</JN_A1>
+					<JN_S1>-999997</JN_S1>
+					<ZBC_S1>-999997</ZBC_S1>
+					<UBC_A1 />
+					<UBC_AD1 />
+					<UBC_S1>-999997</UBC_S1>
+					<UBC_SP1 />
+					<MG_S1>0</MG_S1>
+					<MTB_S1>-999997</MTB_S1>
+					<MZB_A1>0</MZB_A1>
+					<MZB_S1>-999997</MZB_S1>
+					<ND_AD1>0</ND_AD1>
+					<ND_S1>20</ND_S1>
+					<ND_SP1>0</ND_SP1>
+					<NG_S1>0</NG_S1>
+					<NN_A1>0</NN_A1>
+					<NN_A2>0</NN_A2>
+					<NN_S1>-999997</NN_S1>
+					<NOB_S1>-999997</NOB_S1>
+					<OG_S1>0</OG_S1>
+					<ON_S1>0</ON_S1>
+					<OR_A1>0</OR_A1>
+					<OR_S1>0</OR_S1>
+					<ACC_A1 />
+					<ACC_S1>-999997</ACC_S1>
+					<PR_S1>0</PR_S1>
+					<PR_SP1>0</PR_SP1>
+					<QWB_A1>0</QWB_A1>
+					<QWB_A2>0</QWB_A2>
+					<QWB_S1>0</QWB_S1>
+					<RCB_S1>-999997</RCB_S1>
+					<RN_S1>-999997</RN_S1>
+					<RWB_A1>0</RWB_A1>
+					<RWB_A2>0</RWB_A2>
+					<RWB_S1>0</RWB_S1>
+					<ScoreCardAccountType>0</ScoreCardAccountType>
+					<ScoreCardType>3</ScoreCardType>
+					<VBC_SP1 />
+					<SR_S1>-999997</SR_S1>
+					<TWB_S1>0</TWB_S1>
+					<URB_S1>-999997</URB_S1>
+					<UT_S1>-999997</UT_S1>
+					<UTB_S1>-999997</UTB_S1>
+					<UWB_S1>230</UWB_S1>
+					<VG_S1>0</VG_S1>
+					<VM_S1>-999997</VM_S1>
+					<VR_AD1>0</VR_AD1>
+					<VRB_S1>-999997</VRB_S1>
+					<W_S1>P1</W_S1>
+					<BCC_A1>0</BCC_A1>
+					<BCC_A2>0</BCC_A2>
+					<BCC_S1>-999997</BCC_S1>
+					<WOB>0</WOB>
+					<WRB_S1>-999997</WRB_S1>
+					<XE_S1>72</XE_S1>
+					<DCC_A1>0</DCC_A1>
+					<DCC_A2>0</DCC_A2>
+					<DCC_S1>-999997</DCC_S1>
+					<XOB>1</XOB>
+					<XRB_A1>0</XRB_A1>
+					<XRB_A2>0</XRB_A2>
+					<XRB_S1>0</XRB_S1>
+					<XS_S1>-999997</XS_S1>
+					<XVB_S1>-999997</XVB_S1>
+					<YCB_S1>-999997</YCB_S1>
+					<CCC_A1>0</CCC_A1>
+					<CCC_A2>0</CCC_A2>
+					<CCC_S1>-999997</CCC_S1>
+					<YRB_A1>0</YRB_A1>
+					<YRB_A2>0</YRB_A2>
+					<YRB_S1>0</YRB_S1>
+					<YUB_S1>-999997</YUB_S1>
+					<Z_A1>0</Z_A1>
+					<Z_S1>6</Z_S1>
+					<ZM_S1>-999997</ZM_S1>
+					<ZRB_S1>0</ZRB_S1>
+				</inputapplicant>
+				<outputapplicant>
+					<ZBC_S1 MaximumScore="8" ReasonCode="101">8</ZBC_S1>
+					<UBC_S1 MaximumScore="12" ReasonCode="101">5</UBC_S1>
+					<MZB_S1 MaximumScore="36" ReasonCode="112">0</MZB_S1>
+					<ND_S1 MaximumScore="0" ReasonCode="204">-19</ND_S1>
+					<OR_S1 MaximumScore="0" ReasonCode="102">0</OR_S1>
+					<ACC_S1 MaximumScore="0" ReasonCode="101">-5</ACC_S1>
+					<ReasonCodes>
+						<ReasonCode>203</ReasonCode>
+						<ReasonCode>112</ReasonCode>
+						<ReasonCode>204</ReasonCode>
+					</ReasonCodes>
+					<Score>506</Score>
+					<ScoreCard>Callcredit.Gauge.Full.AO.DelOptOut</ScoreCard>
+					<VM_S1 MaximumScore="18" ReasonCode="109">10</VM_S1>
+					<worst_curr_s1 MaximumScore="32" ReasonCode="101">32</worst_curr_s1>
+					<DCC_S1 MaximumScore="0" ReasonCode="108">-7</DCC_S1>
+					<YRB_S1 MaximumScore="8" ReasonCode="101">8</YRB_S1>
+					<Z_S1 MaximumScore="0" ReasonCode="203">-100</Z_S1>
+					<ZRB_S1 MaximumScore="27" ReasonCode="112">27</ZRB_S1>
+				</outputapplicant>
+			</scorecardlog>
+		</payload>
+		<creditrequest xmlns="urn:callcredit.co.uk/soap:callreport7" schemaversion="7.1" datasets="511">
+			<idoutput>1</idoutput>
+			<logscore>1</logscore>
+			<applicant>
+				<address>
+					<buildingno>61</buildingno>
+					<postcode>SK6 7ER</postcode>
+				</address>
+				<name>
+					<forename>GRAHAM</forename>
+					<surname>GOLF</surname>
+				</name>
+				<dob>1964-12-03</dob>
+			</applicant>
+			<score>1</score>
+			<purpose>CL</purpose>
+		</creditrequest>
+		<picklist xmlns="urn:callcredit.co.uk/soap:callreport7" maxaddressitems="20" maxnameitems="9" picklist="1" regenerated="0">
+			<applicant id="1" reporttype="3">
+				<address addressid="1">
+					<addressinput>
+						<abodeno />
+						<buildingno>61</buildingno>
+						<buildingname />
+						<street1 />
+						<street2 />
+						<sublocality />
+						<locality />
+						<posttown />
+						<postcode>SK6 7ER</postcode>
+					</addressinput>
+					<fullmatches reporttype="3" matchstatus="2">
+						<fullmatch selected="1">
+							<addressmatch>
+								<buildingno>61</buildingno>
+								<street1>THE RIDGE</street1>
+								<locality>STOCKPORT</locality>
+								<posttown>CHESHIRE</posttown>
+								<postcode>SK6 7ER</postcode>
+								<domicileid>41123680</domicileid>
+							</addressmatch>
+							<name nameid="1">
+								<nameinput>
+									<title />
+									<forename>GRAHAM</forename>
+									<othernames />
+									<surname>GOLF</surname>
+								</nameinput>
+								<namematches reporttype="3" matchstatus="2">
+									<namematch selected="1">
+										<title>MR</title>
+										<forename>GRAHAM</forename>
+										<surname>GOLF</surname>
+										<residenceid>169068271</residenceid>
+										<dob>1964-12-03</dob>
+									</namematch>
+								</namematches>
+							</name>
+						</fullmatch>
+					</fullmatches>
+				</address>
+			</applicant>
+		</picklist>
+		<creditreport xmlns="urn:callcredit.co.uk/soap:callreport7" searchid="{9AFB0D9D-2B44-4203-9FCD-45D04A635DAE}" linktype="0">
+			<applicant reporttype="3" tpoptout="0" ageflag="0" reporttitle="GRAHAM GOLF ">
+				<creditscores>
+					<creditscore>
+						<score class="2">506</score>
+						<reasons>
+							<code>203</code>
+							<code>112</code>
+							<code>204</code>
+							<code>0</code>
+						</reasons>
+					</creditscore>
+				</creditscores>
+				<addressconfs>
+					<addressconf pafvalid="1" otherresidents="1">
+						<address current="1">61 THE RIDGE, STOCKPORT, CHESHIRE SK6 7ER</address>
+						<resident matchtype="IM" currentname="1" declaredalias="0" IndividualType="Individual: Current Name" SameFamilyType="Non Same Family resident" AssociateType="Non Associate resident">
+							<residenceid>169068271</residenceid>
+							<name>GRAHAM GOLF</name>
+							<duration>P72M</duration>
+							<startdate>2012-09-01</startdate>
+							<ervalid>1</ervalid>
+							<erhistory>
+								<erid>181170788</erid>
+								<startdate>2012-09-01</startdate>
+								<optout>0</optout>
+								<rollingroll>0</rollingroll>
+							</erhistory>
+						</resident>
+					</addressconf>
+				</addressconfs>
+				<judgments>
+					<judgment>
+						<ccjcaseperid>80004455</ccjcaseperid>
+						<name>MR GRAHAM GOLF</name>
+						<address current="1">61 THE RIDGE, MARPLE, STOCKPORT,SK6 7ER</address>
+						<courtname>HOLYWELL</courtname>
+						<courttype>0</courttype>
+						<casenumber>ABC121</casenumber>
+						<status>JG</status>
+						<amount>60</amount>
+						<judgmentdate>2017-01-20</judgmentdate>
+					</judgment>
+				</judgments>
+				<bais>
+					<bai>
+						<insolvencyorderid>1712842</insolvencyorderid>
+						<courtname>TESTTOWN</courtname>
+						<currentstatus>A</currentstatus>
+						<amount>150</amount>
+						<ordertype>AO</ordertype>
+						<orderdate>2018-07-31</orderdate>
+						<caseyear>2017</caseyear>
+						<caseref>654321</caseref>
+						<name>Mr GRAHAM GOLF</name>
+						<address current="1">61 THE RIDGE, MARPLE, STOCKPORT SK6 7ER</address>
+					</bai>
+					<bai>
+						<insolvencyorderid>1712860</insolvencyorderid>
+						<courtname>TESTTOWN</courtname>
+						<currentstatus>A</currentstatus>
+						<ordertype>BO</ordertype>
+						<orderdate>2018-07-31</orderdate>
+						<caseyear>2017</caseyear>
+						<caseref>654321</caseref>
+						<name>Mr GRAHAM GOLF</name>
+						<address current="1">61 THE RIDGE, MARPLE, STOCKPORT SK6 7ER</address>
+					</bai>
+					<bai>
+						<insolvencyorderid>1712878</insolvencyorderid>
+						<courtname>TESTTOWN</courtname>
+						<currentstatus>A</currentstatus>
+						<ordertype>DA</ordertype>
+						<orderdate>2018-07-31</orderdate>
+						<caseyear>2017</caseyear>
+						<caseref>654321</caseref>
+						<name>Mr GRAHAM GOLF</name>
+						<address current="1">61 THE RIDGE, MARPLE, STOCKPORT SK6 7ER</address>
+					</bai>
+					<bai>
+						<insolvencyorderid>1712896</insolvencyorderid>
+						<currentstatus>A</currentstatus>
+						<ordertype>DR</ordertype>
+						<orderdate>2018-07-31</orderdate>
+						<caseyear>2017</caseyear>
+						<caseref>654321</caseref>
+						<name>Mr GRAHAM GOLF</name>
+						<address current="1">61 THE RIDGE, MARPLE, STOCKPORT SK6 7ER</address>
+					</bai>
+					<bai>
+						<insolvencyorderid>1712914</insolvencyorderid>
+						<courtname>TESTTOWN</courtname>
+						<currentstatus>A</currentstatus>
+						<ordertype>FT</ordertype>
+						<orderdate>2018-07-31</orderdate>
+						<caseyear>2017</caseyear>
+						<caseref>654321</caseref>
+						<name>Mr GRAHAM GOLF</name>
+						<address current="1">61 THE RIDGE, MARPLE, STOCKPORT SK6 7ER</address>
+					</bai>
+				</bais>
+				<searches />
+				<addresslinks>
+					<addresses>
+						<address current="1" addressid="1" declared="1">61 THE RIDGE, STOCKPORT, CHESHIRE, SK6 7ER</address>
+						<address current="0" addressid="2" declared="0">63 THE RIDGE, STOCKPORT, CHESHIRE, SK6 7ER</address>
+						<address current="0" addressid="3" declared="0">65 THE RIDGE, STOCKPORT, CHESHIRE, SK6 7ER</address>
+					</addresses>
+					<links>
+						<link from="1" to="2">
+							<addlinkid>81281456</addlinkid>
+							<creationdate>2018-08-24</creationdate>
+							<lastconfdate>2018-08-24</lastconfdate>
+							<supplierdetails>
+								<suppliername>Halifax plc</suppliername>
+								<suppliertypecode>BK</suppliertypecode>
+							</supplierdetails>
+						</link>
+						<link from="1" to="3">
+							<addlinkid>81281458</addlinkid>
+							<creationdate>2018-08-24</creationdate>
+							<lastconfdate>2018-08-24</lastconfdate>
+							<supplierdetails>
+								<suppliername>Halifax plc</suppliername>
+								<suppliertypecode>BK</suppliertypecode>
+							</supplierdetails>
+						</link>
+						<link from="2" to="1">
+							<addlinkid>81281457</addlinkid>
+							<creationdate>2018-08-24</creationdate>
+							<lastconfdate>2018-08-24</lastconfdate>
+							<supplierdetails>
+								<suppliername>Halifax plc</suppliername>
+								<suppliertypecode>BK</suppliertypecode>
+							</supplierdetails>
+						</link>
+						<link from="3" to="1">
+							<addlinkid>81281459</addlinkid>
+							<creationdate>2018-08-24</creationdate>
+							<lastconfdate>2018-08-24</lastconfdate>
+							<supplierdetails>
+								<suppliername>Halifax plc</suppliername>
+								<suppliertypecode>BK</suppliertypecode>
+							</supplierdetails>
+						</link>
+					</links>
+				</addresslinks>
+				<aliaslinks>
+					<aliaslink declared="0">
+						<aliasid>3464041</aliasid>
+						<name>MR FREDDIE FOOTBALL</name>
+						<alias>MR GRAHAM GOLF</alias>
+						<creationdate>2018-08-24</creationdate>
+						<lastconfdate>2018-08-24</lastconfdate>
+						<supplierdetails>
+							<suppliername>Halifax plc</suppliername>
+							<suppliertypecode>BK</suppliertypecode>
+						</supplierdetails>
+					</aliaslink>
+					<aliaslink declared="0">
+						<aliasid>3464040</aliasid>
+						<name>MR GRAHAM GOLF</name>
+						<alias>MR FREDDIE FOOTBALL</alias>
+						<creationdate>2018-08-24</creationdate>
+						<lastconfdate>2018-08-24</lastconfdate>
+						<supplierdetails>
+							<suppliername>Halifax plc</suppliername>
+							<suppliertypecode>BK</suppliertypecode>
+						</supplierdetails>
+					</aliaslink>
+				</aliaslinks>
+				<associatelinks>
+					<associatelink declaredaddress="0">
+						<associd>22934026</associd>
+						<name>MR FREDDIE FOOTBALL</name>
+						<creationdate>2018-08-24</creationdate>
+						<lastconfdate>2018-08-24</lastconfdate>
+						<supplierdetails>
+							<suppliername>Halifax plc</suppliername>
+							<suppliertypecode>BK</suppliertypecode>
+						</supplierdetails>
+					</associatelink>
+				</associatelinks>
+				<cifas />
+				<rtr />
+				<accs>
+					<acc>
+						<accountid>100000692</accountid>
+						<shaccholderid>100000493</shaccholderid>
+						<memberportid>112</memberportid>
+						<supplierdetails apacs="0">
+							<suppliername>HALIFAX</suppliername>
+							<suppliertypecode>BK</suppliertypecode>
+						</supplierdetails>
+						<accholderdetails>
+							<name>MR GRAHAM GOLF 1</name>
+							<address current="1">61 THE RIDGE, MARPLE SK6 7ER</address>
+							<dob>1964-12-03</dob>
+							<statuscode>N</statuscode>
+							<startdate>1999-07-30</startdate>
+						</accholderdetails>
+						<acchistory>
+							<ah m="2018-03" bal="100" acc="OK" pay="0" />
+						</acchistory>
+						<accdetails>
+							<accno>**************6567</accno>
+							<accsuffix>1</accsuffix>
+							<joint>0</joint>
+							<status>N</status>
+							<dateupdated>2018-01-01</dateupdated>
+							<acctypecode>MG</acctypecode>
+							<accgroupid>2</accgroupid>
+							<currencycode>GBP</currencycode>
+							<balance>100</balance>
+							<accstartdate>1999-07-30</accstartdate>
+							<repayfreqcode>A</repayfreqcode>
+						</accdetails>
+					</acc>
+				</accs>
+			</applicant>
+		</creditreport>
+	</SearchResult>
+</Search07aResponse>

@@ -1,0 +1,67 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/createCases</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <createCases xmlns="http://tempuri.org/">
+      <casesInfo>
+        <BizAgiWSParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+          <domain>******</domain>
+          <userName>******</userName>
+          <Cases>
+            <Case>
+              <Process>Disputes</Process>
+              <Entities>
+                <CallCredit>
+                  <Dispute>
+                    <IsAutomatic>1</IsAutomatic>
+                    <DateReceived>2018-05-21</DateReceived>
+                    <DisputeId>3773782</DisputeId>
+                    <CCCDisputeType>1302</CCCDisputeType>
+                    <CCCAffiliateID>501</CCCAffiliateID>
+                    <ConsumerRequest>Dispute Text:  Periodically
+Dispute detail data: Acc Holder Name: John Ferrari
+Acc Holder Address: 17  Top Gear Lane X9 9LF
+Date of Birth: 13/10/1944 00:00:00
+Acc Number: *************0123
+Acc Type Code: CC
+Organization Name: LENDER 3
+Org. Type Code: FN
+Balance: 6345
+Limit: 15000
+Start Date: 29/10/2014 00:00:00
+End Date: 01/01/0001 00:00:00
+Is Acc Rolledover: 1
+No Of Overdue Paym: 2
+Next Paym. Amount: 190
+
+</ConsumerRequest>
+                    <CCCCustomerID>${#TestCase#CCCCustomerID}</CCCCustomerID>
+                    <ResidenceID>${#TestCase#ResidenceID}</ResidenceID>
+                    <Name>
+                      <TitleOther>${#TestCase#TitleOther}</TitleOther>
+                      <Forename>${#TestCase#Forname}</Forename>
+                      <Surname>${#TestCase#Surname}</Surname>
+                    </Name>
+                    <DoB>${#TestCase#DoB}</DoB>	
+                    <UKAddress>
+                      <Abode />
+                      <HouseName />
+                      <HouseNumber>17</HouseNumber>
+                      <Street1>Top Gear Lane</Street1>
+                      <Street2 />
+                      <Town>Test Town</Town>
+                      <PostCode>${#TestCase#PostCode}</PostCode>
+                    </UKAddress>
+                    <CCCMemberPortID>1534590</CCCMemberPortID>
+                    <CCCAccountID>2</CCCAccountID>
+                  </Dispute>
+                </CallCredit>
+              </Entities>
+            </Case>
+          </Cases>
+        </BizAgiWSParam>
+      </casesInfo>
+    </createCases>
+  </s:Body>
+</s:Envelope>

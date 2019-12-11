@@ -1,0 +1,54 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/createCases</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <createCases xmlns="http://tempuri.org/">
+      <casesInfo>
+        <BizAgiWSParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+          <domain>******</domain>
+          <userName>******</userName>
+          <Cases>
+            <Case>
+              <Process>Disputes</Process>
+              <Entities>
+                <CallCredit>
+                  <Dispute>
+                    <IsAutomatic>1</IsAutomatic>
+                    <DateReceived>2018-04-11</DateReceived>
+                    <DisputeId>3773777</DisputeId>
+                    <CCCDisputeType>401</CCCDisputeType>
+                    <CCCAffiliateID>501</CCCAffiliateID>
+                    <ConsumerRequest>Dispute Text:  Test free text entry
+Dispute detail data: Link Name: MRS VICKY TENNIS
+Link Creation Date: 01/01/2004 00:00:00
+Link Last CONF Date: 01/01/2004 00:00:00
+Link Supplier Name: Callcredit
+
+</ConsumerRequest>
+                    <CCCCustomerID>200000</CCCCustomerID>
+                          <ResidenceID>169068275</ResidenceID>
+                    <Name>
+                      <TitleOther>MRS</TitleOther>
+                      <Forename>VICKY</Forename>
+                      <MiddleName></MiddleName>
+                      <Surname>TENNIS</Surname>
+                    </Name>
+                    <DoB>23/01/1975</DoB>
+                    <UKAddress>
+                      <HouseNumber>63</HouseNumber>
+                      <Street1>THE RIDGE</Street1>
+                      <Town>STOCKPORT</Town>
+                      <PostCode>SK6 7ER</PostCode>
+                    </UKAddress>
+                    <CCCAssocID>22934028</CCCAssocID>
+                  </Dispute>
+                </CallCredit>
+              </Entities>
+            </Case>
+          </Cases>
+        </BizAgiWSParam>
+      </casesInfo>
+    </createCases>
+  </s:Body>
+</s:Envelope>

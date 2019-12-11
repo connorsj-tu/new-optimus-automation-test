@@ -1,0 +1,761 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <Search07aResponse xmlns="urn:callcredit.co.uk/soap:callreport7">
+         <SearchResult>
+            <jobdetails>
+               <searchid>{4841A80A-0029-4F4A-82D1-C34D51C0E696}</searchid>
+               <cast>018.007.7.2.1.1.0.50829274.0</cast>
+               <pstv>50829274</pstv>
+               <ls>0</ls>
+               <searchdate>2019-06-21T13:42:11</searchdate>
+            </jobdetails>
+            <creditrequest schemaversion="7.1" datasets="255">
+               <idoutput>1</idoutput>
+               <logscore>1</logscore>
+               <applicant>
+                  <address>
+                     <buildingno>37</buildingno>
+                     <postcode>BD9 6QN</postcode>
+                  </address>
+                  <name>
+                     <forename>AROMATIC</forename>
+                     <surname>DUCK</surname>
+                  </name>
+                  <dob>1961-10-22</dob>
+               </applicant>
+               <score>0</score>
+               <purpose>CL</purpose>
+            </creditrequest>
+            <picklist maxaddressitems="20" maxnameitems="9" picklist="1" regenerated="0">
+               <applicant id="1" reporttype="3">
+                  <address addressid="1">
+                     <addressinput>
+                        <abodeno/>
+                        <buildingno>37</buildingno>
+                        <buildingname/>
+                        <street1/>
+                        <street2/>
+                        <sublocality/>
+                        <locality/>
+                        <posttown/>
+                        <postcode>BD9 6QN</postcode>
+                     </addressinput>
+                     <fullmatches reporttype="3" matchstatus="2">
+                        <fullmatch selected="1">
+                           <addressmatch>
+                              <buildingno>37</buildingno>
+                              <street1>BRANTWOOD OVAL</street1>
+                              <posttown>BRADFORD</posttown>
+                              <postcode>BD9 6QN</postcode>
+                              <domicileid>4741978</domicileid>
+                           </addressmatch>
+                           <name nameid="1">
+                              <nameinput>
+                                 <title/>
+                                 <forename>AROMATIC</forename>
+                                 <othernames/>
+                                 <surname>DUCK</surname>
+                              </nameinput>
+                              <namematches reporttype="3" matchstatus="2">
+                                 <namematch selected="1">
+                                    <title>MR</title>
+                                    <forename>AROMATIC</forename>
+                                    <surname>DUCK</surname>
+                                    <residenceid>291117281</residenceid>
+                                    <dob>1961-10-22</dob>
+                                 </namematch>
+                              </namematches>
+                           </name>
+                        </fullmatch>
+                     </fullmatches>
+                  </address>
+               </applicant>
+            </picklist>
+            <creditreport searchid="{4841A80A-0029-4F4A-82D1-C34D51C0E696}" linktype="0">
+               <applicant reporttype="3" tpoptout="0" ageflag="0" reporttitle="AROMATIC DUCK ">
+                  <addressconfs>
+                     <addressconf pafvalid="1" otherresidents="1">
+                        <address current="1">37 BRANTWOOD OVAL, BRADFORD BD9 6QN</address>
+                        <resident matchtype="SM" currentname="0" declaredalias="0" IndividualType="Non individual resident" SameFamilyType="Same Family: Same Surname" AssociateType="Associate: Proper Associate">
+                           <residenceid>291117280</residenceid>
+                           <name>CRISPY DUCK</name>
+                           <duration>P25M</duration>
+                           <startdate>2017-05-01</startdate>
+                           <ervalid>1</ervalid>
+                           <erhistory>
+                              <erid>280742506</erid>
+                              <startdate>2017-05-01</startdate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                        </resident>
+                     </addressconf>
+                  </addressconfs>
+                  <judgments/>
+                  <bais/>
+                  <searches>
+                     <search>
+                        <searchref>{131BDC67-595F-43AB-BC4F-DCE10415DCB4}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-21T07:49:04</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{99D12B40-083D-44AC-B051-6C05954B28E6}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-21T07:44:06</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{E46DC25F-F203-4414-9988-42369E7F50EB}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-21T07:43:46</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{F44355AA-7EE6-4DB8-9C08-238EE3B80472}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-20T14:50:21</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{97FB6562-D124-4220-83B6-E756CAB00A57}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-20T10:37:42</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{83D3FA8F-E39C-4744-B682-56535D9B0430}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-20T10:30:08</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{D7AD5876-31DD-4CFD-8629-5B40B76CEF48}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-20T07:57:33</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{304A43DB-3D0C-48C3-8301-47AC38AA18A1}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-19T15:52:27</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{515D1EE6-6A44-434B-837F-05E2BDEB5259}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-19T15:12:02</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{9A326120-463B-4C99-93D1-A02DF7C35F0B}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-19T13:58:11</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{F79958CB-A5DD-4FA3-B8EA-394B313E3862}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-19T13:22:07</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{DD3AD18D-5B25-4E43-AAB3-421B991FB10C}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-19T08:38:26</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{4FC5BD3F-44BB-477A-9A47-3A985941F8EC}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-18T14:43:26</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{A472108C-E4DD-4B00-A212-CA11D8B1509E}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-17T08:58:28</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{D2842222-04DD-4F43-A4FA-1EEF15A05393}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-13T08:21:11</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{F4C7838D-718E-448A-94B0-329C822DFEF6}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-12T11:07:13</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{636EAF76-0AE2-4BC4-9E84-D4F2DA096B1B}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-12T11:00:46</searchdate>
+                        <name>Mr Aromatic Duck</name>
+                        <address current="1">37, BD96QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{0F438542-BA69-4EEA-95FC-27B3D017A658}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-12T10:27:09</searchdate>
+                        <name>Mr Aromatic Duck</name>
+                        <address current="1">37, BD96QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{C04AF062-2430-4ECD-A508-741C7CA7D123}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-12T10:02:43</searchdate>
+                        <name>Mr Aromatic Duck</name>
+                        <address current="1">37, BD96QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{95DBAB18-6665-4F79-98A3-905F18F046EB}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-12T08:07:01</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{9751A2D1-E018-406D-82C3-C2A7C0D7ACB7}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T14:45:26</searchdate>
+                        <name>AROMATIC DUCK</name>
+                        <dob>1961-10-22</dob>
+                        <address current="1">37, BD9 6QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{4D2C570E-969A-4ED4-948F-F941CD4FE86E}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T14:13:48</searchdate>
+                        <name>Mr Aromatic Duck</name>
+                        <address current="1">37, BD96QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{6E827739-0BC2-495E-86E2-952899A4ACAF}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T13:55:34</searchdate>
+                        <name>Mr Aromatic Duck</name>
+                        <address current="1">37, BD96QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{4050EC9C-528C-4D11-8A24-B37F7CF061EA}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T13:02:09</searchdate>
+                        <name>Mr Aromatic Duck</name>
+                        <address current="1">37, BD96QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{EDF775CA-073A-4FD6-84A0-B163C8F132E6}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T12:15:04</searchdate>
+                        <name>Mr Aromatic Duck</name>
+                        <address current="1">37, BD96QN</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{AF71F798-7984-4397-908A-A79E4937CD73}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T12:08:49</searchdate>
+                        <name>mr aromatic duck</name>
+                        <address current="1">37, bd96qn</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                  </searches>
+                  <addresslinks>
+                     <addresses>
+                        <address current="1" addressid="1" declared="1">37 BRANTWOOD OVAL, BRADFORD, BD9 6QN</address>
+                        <address current="0" addressid="2" declared="0">17 KENSINGTON ROAD, STOKE-ON-TRENT, ST4 5BB</address>
+                     </addresses>
+                     <links>
+                        <link from="2" to="1">
+                           <addlinkid>486529490</addlinkid>
+                           <creationdate>2017-03-02</creationdate>
+                           <lastconfdate>2017-03-02</lastconfdate>
+                           <supplierdetails>
+                              <suppliername>The Co-operative Bank</suppliername>
+                              <suppliertypecode>BK</suppliertypecode>
+                           </supplierdetails>
+                        </link>
+                     </links>
+                  </addresslinks>
+                  <aliaslinks/>
+                  <associatelinks>
+                     <associatelink declaredaddress="1">
+                        <associd>53440622</associd>
+                        <name>MISS CRISPY DUCK</name>
+                        <creationdate>2018-01-01</creationdate>
+                        <lastconfdate>2018-01-01</lastconfdate>
+                        <supplierdetails>
+                           <suppliername>Halifax Plc</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                     </associatelink>
+                  </associatelinks>
+                  <cifas/>
+                  <rtr>
+                     <account updated="2019-06-10T09:57:52">
+                        <residenceid>291117281</residenceid>
+                        <memberportid>838</memberportid>
+                        <accountid>4277282</accountid>
+                        <holder>
+                           <name>MR AROMATIC DUCK</name>
+                           <address current="1">37 BRANTWOOD OVAL BRADFORD BD96QN</address>
+                           <dob>1961-10-22</dob>
+                        </holder>
+                        <orgtypecode>MO</orgtypecode>
+                        <orgname>Test Data Supplier 1</orgname>
+                        <accnum>**************7382</accnum>
+                        <accsuffix>12</accsuffix>
+                        <acctypecode>CC</acctypecode>
+                        <balance>845</balance>
+                        <startdate>2018-06-06</startdate>
+                        <accstatuscode>N</accstatuscode>
+                        <repayfreqcode>M</repayfreqcode>
+                        <numoverdue>0</numoverdue>
+                        <rollover>0</rollover>
+                        <creditext>0</creditext>
+                        <changepay>0</changepay>
+                        <nextpayamount>0</nextpayamount>
+                     </account>
+                  </rtr>
+                  <accs>
+                     <acc>
+                        <accountid>3074699</accountid>
+                        <shaccholderid>3032683</shaccholderid>
+                        <memberportid>183</memberportid>
+                        <supplierdetails apacs="1">
+                           <suppliername>The Co-operative Bank</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS CHRISTINE B MCDERMOTT</name>
+                           <address current="1">APARTMENT 5 LOTHIAN COURT;POPLAR DRIVE;STOKE-ON-TRENT;;;;; ST3 3PT</address>
+                           <dob>1955-11-27</dob>
+                           <statuscode>D</statuscode>
+                           <startdate>2012-05-09</startdate>
+                           <enddate>2018-08-01</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2018-08" bal="0" acc="ST" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-07" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-06" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-05" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-04" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-03" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-02" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-01" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-12" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-11" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-10" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-09" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-08" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-07" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-06" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-05" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-04" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-03" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-02" bal="0" limit="1000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-01" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-12" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-11" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-10" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-09" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-08" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-07" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-06" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-05" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-04" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-03" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-02" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-01" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-12" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-11" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-10" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-09" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-08" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-07" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-06" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-05" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-04" bal="0" limit="1000" acc="OK" pay="0" stmtbal="58" payamt="58" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-03" bal="59" limit="1000" acc="OK" pay="0" stmtbal="72" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-02" bal="73" limit="1000" acc="OK" pay="0" stmtbal="86" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-01" bal="87" limit="1000" acc="OK" pay="0" stmtbal="100" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-12" bal="101" limit="1000" acc="OK" pay="0" stmtbal="119" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-11" bal="120" limit="1000" acc="OK" pay="0" stmtbal="133" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-10" bal="134" limit="1000" acc="OK" pay="0" stmtbal="151" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-09" bal="170" limit="1000" acc=".." pay="?"/>
+                           <ah m="2014-08" bal="170" limit="1000" acc="OK" pay="0" stmtbal="188" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-07" bal="189" limit="1000" acc="OK" pay="0" stmtbal="201" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-06" bal="201" limit="1000" acc="OK" pay="0" stmtbal="228" payamt="30" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-05" bal="229" limit="1000" acc="OK" pay="0" stmtbal="256" payamt="30" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-04" bal="257" limit="1000" acc="OK" pay="0" stmtbal="273" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-03" bal="274" limit="1000" acc="OK" pay="0" stmtbal="280" payamt="10" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-02" bal="281" limit="1000" acc="OK" pay="0" stmtbal="288" payamt="10" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-01" bal="289" limit="1000" acc="OK" pay="0" stmtbal="299" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-12" bal="300" limit="1000" acc="OK" pay="0" stmtbal="311" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-11" bal="312" limit="1000" acc="OK" pay="0" stmtbal="318" payamt="10" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-10" bal="319" limit="1000" acc="OK" pay="0" stmtbal="335" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-09" bal="336" limit="1000" acc="OK" pay="0" stmtbal="346" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-08" bal="347" limit="1000" acc="OK" pay="0" stmtbal="358" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-07" bal="359" limit="1000" acc="OK" pay="0" stmtbal="369" payamt="15" cashadvcount="0" cashadvtotal="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>****************83</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2018-08-01</dateupdated>
+                           <acctypecode>CC</acctypecode>
+                           <accgroupid>3</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2012-05-09</paystartdate>
+                           <accstartdate>2012-05-09</accstartdate>
+                           <accenddate>2018-08-01</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                           <promotionalrate>0</promotionalrate>
+                           <statementbalance>0</statementbalance>
+                        </accdetails>
+                        <notice>
+                           <type>D</type>
+                           <refnum>23</refnum>
+                           <dateraised>2019-06-12</dateraised>
+                        </notice>
+                     </acc>
+                  </accs>
+               </applicant>
+            </creditreport>
+         </SearchResult>
+      </Search07aResponse>
+   </soap:Body>
+</soap:Envelope>

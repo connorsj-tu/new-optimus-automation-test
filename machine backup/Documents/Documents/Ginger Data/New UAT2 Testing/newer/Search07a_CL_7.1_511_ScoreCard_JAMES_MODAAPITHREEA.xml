@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>      
+	<Search07aResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <SearchResult>
+            <jobdetails xmlns="urn:callcredit.co.uk/soap:callreport7">
+               <searchid>{3AF4049C-60E1-4C7B-A304-06C5E697DDAE}</searchid>
+               <cast>014.043.7.2.1.1.0.9482851.0</cast>
+               <pstv>9482851</pstv>
+               <ls>0</ls>
+               <searchdate>2019-08-21T14:20:29</searchdate>
+            </jobdetails>
+            <payload xmlns="urn:callcredit.co.uk/soap:callreport7">
+               <scorecardlog searchid="{3AF4049C-60E1-4C7B-A304-06C5E697DDAE}" linktype="0" scorerequesttype="3" xmlns="urn:callcredit.plc.uk/scorecard">
+                  <inputapplicant>
+                     <Age>19</Age>
+                     <BB_S1>0</BB_S1>
+                     <BF_S1>H</BF_S1>
+                     <WBC_A1/>
+                     <WBC_AD1/>
+                     <BSB_S1>-999997</BSB_S1>
+                     <C_S1>1</C_S1>
+                     <XBC_AD1/>
+                     <XBC_S1>-999997</XBC_S1>
+                     <DD_S1>0</DD_S1>
+                     <YBC_A1/>
+                     <YBC_S1>-999997</YBC_S1>
+                     <DTB_S1>-999997</DTB_S1>
+                     <E_S1>1</E_S1>
+                     <EB_A1>0</EB_A1>
+                     <EB_A2>0</EB_A2>
+                     <EB_S1>0</EB_S1>
+                     <EM_S1>-999997</EM_S1>
+                     <F>0</F>
+                     <FB_AD1>0</FB_AD1>
+                     <FB_S1>0</FB_S1>
+                     <FM_A1>0</FM_A1>
+                     <FM_A2>0</FM_A2>
+                     <FM_S1>-999997</FM_S1>
+                     <GC_S1>I1</GC_S1>
+                     <GG_S1>-999997</GG_S1>
+                     <GSB_S1>-999997</GSB_S1>
+                     <IDB_S1>-999997</IDB_S1>
+                     <IG_S1>0</IG_S1>
+                     <IG_SP1>0</IG_SP1>
+                     <JN_A1>0</JN_A1>
+                     <JN_S1>-999997</JN_S1>
+                     <ZBC_S1>-999997</ZBC_S1>
+                     <UBC_A1/>
+                     <UBC_AD1/>
+                     <UBC_S1>-999997</UBC_S1>
+                     <UBC_SP1/>
+                     <MG_S1>-999997</MG_S1>
+                     <MTB_S1>-999997</MTB_S1>
+                     <MZB_A1>0</MZB_A1>
+                     <MZB_S1>-999997</MZB_S1>
+                     <ND_AD1>0</ND_AD1>
+                     <ND_S1>-999997</ND_S1>
+                     <ND_SP1>0</ND_SP1>
+                     <NG_S1>-999997</NG_S1>
+                     <NN_A1>0</NN_A1>
+                     <NN_A2>0</NN_A2>
+                     <NN_S1>-999997</NN_S1>
+                     <NOB_S1>-999997</NOB_S1>
+                     <OG_S1>-999997</OG_S1>
+                     <ON_S1>-999997</ON_S1>
+                     <OR_A1>0</OR_A1>
+                     <OR_S1>0</OR_S1>
+                     <ACC_A1/>
+                     <ACC_S1>-999997</ACC_S1>
+                     <PR_S1>0</PR_S1>
+                     <PR_SP1>0</PR_SP1>
+                     <QWB_A1>0</QWB_A1>
+                     <QWB_A2>0</QWB_A2>
+                     <QWB_S1>0</QWB_S1>
+                     <RCB_S1>-999997</RCB_S1>
+                     <RN_S1>-999997</RN_S1>
+                     <RWB_A1>0</RWB_A1>
+                     <RWB_A2>0</RWB_A2>
+                     <RWB_S1>0</RWB_S1>
+                     <ScoreCardAccountType>0</ScoreCardAccountType>
+                     <ScoreCardType>3</ScoreCardType>
+                     <VBC_SP1/>
+                     <SR_S1>-999997</SR_S1>
+                     <TWB_S1>0</TWB_S1>
+                     <URB_S1>-999997</URB_S1>
+                     <UT_S1>-999997</UT_S1>
+                     <UTB_S1>-999997</UTB_S1>
+                     <UWB_S1>-999997</UWB_S1>
+                     <VG_S1>0</VG_S1>
+                     <VM_S1>-999997</VM_S1>
+                     <VR_AD1>0</VR_AD1>
+                     <VRB_S1>-999997</VRB_S1>
+                     <W_S1>ZZ</W_S1>
+                     <BCC_A1>0</BCC_A1>
+                     <BCC_A2>0</BCC_A2>
+                     <BCC_S1>-999997</BCC_S1>
+                     <WOB>0</WOB>
+                     <WRB_S1>-999997</WRB_S1>
+                     <XE_S1>-999997</XE_S1>
+                     <DCC_A1>0</DCC_A1>
+                     <DCC_A2>0</DCC_A2>
+                     <DCC_S1>-999997</DCC_S1>
+                     <XOB>0</XOB>
+                     <XRB_A1>0</XRB_A1>
+                     <XRB_A2>0</XRB_A2>
+                     <XRB_S1>0</XRB_S1>
+                     <XS_S1>-999997</XS_S1>
+                     <XVB_S1>-999997</XVB_S1>
+                     <YCB_S1>-999997</YCB_S1>
+                     <CCC_A1>0</CCC_A1>
+                     <CCC_A2>0</CCC_A2>
+                     <CCC_S1>-999997</CCC_S1>
+                     <YRB_A1>0</YRB_A1>
+                     <YRB_A2>0</YRB_A2>
+                     <YRB_S1>0</YRB_S1>
+                     <YUB_S1>-999997</YUB_S1>
+                     <Z_A1>0</Z_A1>
+                     <Z_S1>0</Z_S1>
+                     <ZM_S1>-999997</ZM_S1>
+                     <ZRB_S1>0</ZRB_S1>
+                  </inputapplicant>
+                  <outputapplicant>
+                     <Age MaximumScore="0" ReasonCode="401">-5</Age>
+                     <BF_S1 MaximumScore="10" ReasonCode="301">0</BF_S1>
+                     <EB_S1 MaximumScore="0" ReasonCode="110">-100</EB_S1>
+                     <NOB_S1 MaximumScore="13" ReasonCode="402">3</NOB_S1>
+                     <ReasonCodes>
+                        <ReasonCode>110</ReasonCode>
+                        <ReasonCode>301</ReasonCode>
+                        <ReasonCode>402</ReasonCode>
+                     </ReasonCodes>
+                     <Score>597</Score>
+                     <ScoreCard>Callcredit.Gauge.Full.AO.EROptOut</ScoreCard>
+                     <URB_S1 MaximumScore="0" ReasonCode="402">0</URB_S1>
+                     <UTB_S1 MaximumScore="15" ReasonCode="402">15</UTB_S1>
+                     <W_S1 MaximumScore="61" ReasonCode="301">0</W_S1>
+                     <W_XE_S1 MaximumScore="0" ReasonCode="302">0</W_XE_S1>
+                     <XVB_S1 MaximumScore="22" ReasonCode="402">0</XVB_S1>
+                     <YUB_S1 MaximumScore="51" ReasonCode="402">51</YUB_S1>
+                  </outputapplicant>
+               </scorecardlog>
+            </payload>
+            <creditrequest xmlns="urn:callcredit.co.uk/soap:callreport7" schemaversion="7.1" datasets="511">
+               <idoutput>1</idoutput>
+               <logscore>1</logscore>
+               <applicant>
+                  <address>
+                     <buildingno>8</buildingno>
+                     <postcode>HX1 2QA</postcode>
+                  </address>
+                  <name>
+                     <forename>JAMES</forename>
+                     <surname>MODAAPITHREEA</surname>
+                  </name>
+                  <dob>2000-01-01</dob>
+               </applicant>
+               <score>1</score>
+               <purpose>CL</purpose>
+            </creditrequest>
+            <picklist xmlns="urn:callcredit.co.uk/soap:callreport7" maxaddressitems="20" maxnameitems="9" picklist="1" regenerated="0">
+               <applicant id="1" reporttype="3">
+                  <address addressid="1">
+                     <addressinput>
+                        <abodeno/>
+                        <buildingno>8</buildingno>
+                        <buildingname/>
+                        <street1/>
+                        <street2/>
+                        <sublocality/>
+                        <locality/>
+                        <posttown/>
+                        <postcode>HX1 2QA</postcode>
+                     </addressinput>
+                     <fullmatches reporttype="3" matchstatus="2">
+                        <fullmatch selected="1">
+                           <addressmatch>
+                              <buildingno>8</buildingno>
+                              <buildingname>CLARE COURT</buildingname>
+                              <street1>PRESCOTT STREET</street1>
+                              <locality>HALIFAX</locality>
+                              <posttown>WEST YORKSHIRE</posttown>
+                              <postcode>HX1 2QA</postcode>
+                              <domicileid>41199656</domicileid>
+                           </addressmatch>
+                           <name nameid="1">
+                              <nameinput>
+                                 <title/>
+                                 <forename>JAMES</forename>
+                                 <othernames/>
+                                 <surname>MODAAPITHREEA</surname>
+                              </nameinput>
+                              <namematches reporttype="3" matchstatus="2">
+                                 <namematch selected="1">
+                                    <title>MRS</title>
+                                    <forename>JAMES</forename>
+                                    <surname>MODAAPITHREEA</surname>
+                                    <residenceid>219263904</residenceid>
+                                    <dob>2000-01-01</dob>
+                                 </namematch>
+                              </namematches>
+                           </name>
+                        </fullmatch>
+                     </fullmatches>
+                  </address>
+               </applicant>
+            </picklist>
+            <creditreport xmlns="urn:callcredit.co.uk/soap:callreport7" searchid="{3AF4049C-60E1-4C7B-A304-06C5E697DDAE}" linktype="0">
+               <applicant reporttype="3" tpoptout="0" autosearchmaxexceeded="0" ageflag="0" reporttitle="JAMES MODAAPITHREEA ">
+                  <creditscores>
+                     <creditscore>
+                        <score class="2">597</score>
+                        <reasons>
+                           <code>110</code>
+                           <code>301</code>
+                           <code>402</code>
+                           <code>0</code>
+                        </reasons>
+                     </creditscore>
+                  </creditscores>
+                  <addressconfs>
+                     <addressconf pafvalid="1" otherresidents="0">
+                        <address current="1">CLARE COURT, 8 PRESCOTT STREET, HALIFAX, WEST YORKSHIRE HX1 2QA</address>
+                     </addressconf>
+                  </addressconfs>
+                  <judgments/>
+                  <bais/>
+                  <searches>
+                     <search>
+                        <searchref>{4D6BC1C0-D31E-410A-B300-62A8570FBA49}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus Disputes (CR)</searchorgname>
+                        <searchunitname>Optimus Disputes (CR)</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API CTest</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-08-21T14:20:25</searchdate>
+                        <name>JAMES MODAAPITHREEA</name>
+                        <dob>2000-01-01</dob>
+                        <address current="1">8, HX1 2QA</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                  </searches>
+                  <addresslinks/>
+                  <aliaslinks/>
+                  <associatelinks/>
+                  <cifas/>
+                  <rtr>
+                     <account updated="2019-08-01T00:00:00">
+                        <residenceid>219263904</residenceid>
+                        <memberportid>112</memberportid>
+                        <accountid>500023</accountid>
+                        <holder>
+                           <name>MRS JAMES MODAAPITHREEA</name>
+                           <address current="1">8 CLARE COURT HX1 2QA</address>
+                           <dob>2000-01-01</dob>
+                        </holder>
+                        <orgtypecode>FN</orgtypecode>
+                        <orgname>Wonga</orgname>
+                        <accnum>****************23</accnum>
+                        <acctypecode>RC</acctypecode>
+                        <balance>100</balance>
+                        <limit>10000</limit>
+                        <startdate>2018-02-15</startdate>
+                        <enddate>2016-04-14</enddate>
+                        <accstatuscode>O</accstatuscode>
+                        <repayfreqcode>W</repayfreqcode>
+                        <numoverdue>1</numoverdue>
+                        <rollover>1</rollover>
+                        <creditext>1</creditext>
+                        <changepay>1</changepay>
+                        <nextpayamount>12</nextpayamount>
+                     </account>
+                  </rtr>
+                  <accs/>
+               </applicant>
+            </creditreport>
+         </SearchResult>
+      </Search07aResponse>

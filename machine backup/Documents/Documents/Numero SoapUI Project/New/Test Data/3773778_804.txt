@@ -1,0 +1,60 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/createCases</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <createCases xmlns="http://tempuri.org/">
+      <casesInfo>
+        <BizAgiWSParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+          <domain>******</domain>
+          <userName>******</userName>
+          <Cases>
+            <Case>
+              <Process>Disputes</Process>
+              <Entities>
+                <CallCredit>
+                  <Dispute>
+                    <IsAutomatic>1</IsAutomatic>
+                    <DateReceived>2018-05-21</DateReceived>
+                    <DisputeId>3773778</DisputeId>
+                    <CCCDisputeType>804</CCCDisputeType>
+                    <CCCAffiliateID>501</CCCAffiliateID>
+                    <ConsumerRequest>Dispute detail data: Address: 17  Top Gear Lane, Test Town X9 9LF
+Residence ID: 148631882
+Name: John  Ferrari
+Duration: P37M
+Start Date: 05/10/2010 00:00:00
+ER Valid: 1
+History Start Date: 05/10/2010 00:00:00
+History Opt Out: 0
+History Rolling Roll: 0
+
+</ConsumerRequest>
+                    <CCCCustomerID>${#TestCase#CCCCustomerID}</CCCCustomerID>
+                    <ResidenceID>${#TestCase#ResidenceID}</ResidenceID>
+                    <Name>
+                      <TitleOther>${#TestCase#TitleOther}</TitleOther>
+                      <Forename>${#TestCase#Forname}</Forename>
+                      <Surname>${#TestCase#Surname}</Surname>
+                    </Name>
+                    <DoB>${#TestCase#DoB}</DoB>	
+                    <UKAddress>
+                      <Abode />
+                      <HouseName />
+                      <HouseNumber>17</HouseNumber>
+                      <Street1>Top Gear Lane</Street1>
+                      <Street2 />
+                      <Town>Test Town</Town>
+                      <PostCode>${#TestCase#PostCode}</PostCode>
+                    </UKAddress>
+                    <CCCERID>137505770</CCCERID>
+                  </Dispute>
+                </CallCredit>
+              </Entities>
+            </Case>
+          </Cases>
+        </BizAgiWSParam>
+      </casesInfo>
+    </createCases>
+  </s:Body>
+</s:Envelope>

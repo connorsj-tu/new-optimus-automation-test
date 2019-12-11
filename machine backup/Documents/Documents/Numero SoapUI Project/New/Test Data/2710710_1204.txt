@@ -1,0 +1,66 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/createCases</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <createCases xmlns="http://tempuri.org/">
+      <casesInfo>
+        <BizAgiWSParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+          <domain>******</domain>
+          <userName>******</userName>
+          <Cases>
+            <Case>
+              <Process>Disputes</Process>
+              <Entities>
+                <CallCredit>
+                  <Dispute>
+                    <IsAutomatic>1</IsAutomatic>
+                    <DateReceived>2018-02-07</DateReceived>
+                    <DisputeId>2710710</DisputeId>
+                    <CCCDisputeType>1204</CCCDisputeType>
+                    <CCCAffiliateID>501</CCCAffiliateID>
+                    <ConsumerRequest>Dispute Text:  This account is over 6 yrs old, closed and should be removed from my credit file
+Dispute detail data: Supplier Name: Test Lender
+ACC Holder Name: Mr John  Ferrari
+Acc Holder Address: 17  Top Gear Lane Test Town X9 9LF
+Date of Birth: 13/10/1944 00:00:00
+Status Code: N
+Acc Number: ******95-5
+Acc Suffix: 1
+Joint: 0
+Status: N
+Date Updated: 05/11/2013 00:00:00
+Acc Type Code: IC
+Acc Group ID: 3
+
+</ConsumerRequest>
+                    <CCCCustomerID>${#TestCase#CCCCustomerID}</CCCCustomerID>
+                    <ResidenceID>${#TestCase#ResidenceID}</ResidenceID>
+                    <Name>
+                      <TitleOther>${#TestCase#TitleOther}</TitleOther>
+                      <Forename>${#TestCase#Forname}</Forename>
+                      <Surname>${#TestCase#Surname}</Surname>
+                    </Name>
+                    <DoB>${#TestCase#DoB}</DoB>	
+                    <UKAddress>
+                      <Abode />
+                      <HouseName />
+                      <HouseNumber>17</HouseNumber>
+                      <Street1>Top Gear Lane</Street1>
+                      <Street2 />
+                      <Town>Test Town</Town>
+                      <PostCode>${#TestCase#PostCode}</PostCode>
+                    </UKAddress>
+                    <CCCMemberPortID>306</CCCMemberPortID>
+                    <CCCAccountID>5</CCCAccountID>
+                    <CCCShAccHolderID>4</CCCShAccHolderID>
+                  </Dispute>
+                </CallCredit>
+              </Entities>
+            </Case>
+          </Cases>
+        </BizAgiWSParam>
+      </casesInfo>
+    </createCases>
+  </s:Body>
+</s:Envelope>

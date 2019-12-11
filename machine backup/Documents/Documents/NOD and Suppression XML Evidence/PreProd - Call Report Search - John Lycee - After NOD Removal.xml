@@ -1,0 +1,460 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <Search07aResponse xmlns="urn:callcredit.co.uk/soap:callreport7">
+         <SearchResult>
+            <jobdetails>
+               <searchid>{FC52DF60-EA14-4C61-A0CE-1D9CC0201D77}</searchid>
+               <cast>017.007.7.2.1.2.0.50829274.0</cast>
+               <pstv>50829274</pstv>
+               <ls>0</ls>
+               <searchdate>2019-06-13T08:14:15</searchdate>
+            </jobdetails>
+            <creditrequest schemaversion="7.1" datasets="255">
+               <idoutput>1</idoutput>
+               <logscore>1</logscore>
+               <applicant>
+                  <address>
+                     <buildingno>12</buildingno>
+                     <postcode>SK6 6AL</postcode>
+                  </address>
+                  <name>
+                     <forename>JOHN</forename>
+                     <surname>LYCEE</surname>
+                  </name>
+                  <dob>1990-11-10</dob>
+               </applicant>
+               <score>0</score>
+               <purpose>CL</purpose>
+            </creditrequest>
+            <picklist maxaddressitems="20" maxnameitems="9" picklist="1" regenerated="0">
+               <applicant id="1" reporttype="3">
+                  <address addressid="1">
+                     <addressinput>
+                        <abodeno/>
+                        <buildingno>12</buildingno>
+                        <buildingname/>
+                        <street1/>
+                        <street2/>
+                        <sublocality/>
+                        <locality/>
+                        <posttown/>
+                        <postcode>SK6 6AL</postcode>
+                     </addressinput>
+                     <fullmatches reporttype="3" matchstatus="2">
+                        <fullmatch selected="1">
+                           <addressmatch>
+                              <buildingno>12</buildingno>
+                              <street1>STATION ROAD</street1>
+                              <locality>STOCKPORT</locality>
+                              <posttown>CHESHIRE</posttown>
+                              <postcode>SK6 6AL</postcode>
+                              <domicileid>41394854</domicileid>
+                           </addressmatch>
+                           <name nameid="1">
+                              <nameinput>
+                                 <title/>
+                                 <forename>JOHN</forename>
+                                 <othernames/>
+                                 <surname>LYCEE</surname>
+                              </nameinput>
+                              <namematches reporttype="3" matchstatus="2">
+                                 <namematch selected="1">
+                                    <title>MR</title>
+                                    <forename>JOHN</forename>
+                                    <surname>LYCEE</surname>
+                                    <residenceid>292592574</residenceid>
+                                    <dob>1990-11-10</dob>
+                                 </namematch>
+                              </namematches>
+                           </name>
+                        </fullmatch>
+                     </fullmatches>
+                  </address>
+               </applicant>
+            </picklist>
+            <creditreport searchid="{FC52DF60-EA14-4C61-A0CE-1D9CC0201D77}" linktype="0">
+               <applicant reporttype="3" tpoptout="0" ageflag="3" reporttitle="JOHN LYCEE ">
+                  <addressconfs>
+                     <addressconf pafvalid="1" otherresidents="1">
+                        <address current="1">12 STATION ROAD, STOCKPORT, CHESHIRE SK6 6AL</address>
+                        <resident matchtype="IM" currentname="1" declaredalias="0" IndividualType="Individual: Current Name" SameFamilyType="Non Same Family resident" AssociateType="Non Associate resident">
+                           <residenceid>292592574</residenceid>
+                           <name>JOHN LYCEE</name>
+                           <duration>P26M</duration>
+                           <startdate>2017-04-01</startdate>
+                           <ervalid>1</ervalid>
+                           <erhistory>
+                              <erid>288661625</erid>
+                              <startdate>2015-02-01</startdate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>278964248</erid>
+                              <startdate>2017-04-01</startdate>
+                              <optout>1</optout>
+                              <rollingroll>1</rollingroll>
+                           </erhistory>
+                        </resident>
+                     </addressconf>
+                  </addressconfs>
+                  <judgments>
+                     <judgment>
+                        <ccjcaseperid>18837630</ccjcaseperid>
+                        <name>MR ALFIE JACKSON</name>
+                        <address current="1">10 DITCHFIELD ROAD, HODDESDON, HERTFORDSHIRE, EN11 9HX</address>
+                        <courtname>HOLYWELL</courtname>
+                        <courttype>0</courttype>
+                        <casenumber>ABC117</casenumber>
+                        <status>JG</status>
+                        <amount>407</amount>
+                        <judgmentdate>2018-10-31</judgmentdate>
+                     </judgment>
+                  </judgments>
+                  <bais>
+                     <bai>
+                        <insolvencyorderid>6095741</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <amount>150</amount>
+                        <ordertype>AO</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mr JOHN LYCEE</name>
+                        <address current="1">12 STATION ROAD, MARPLE, STOCKPORT SK6 6AL</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095759</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>BO</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mr JOHN LYCEE</name>
+                        <address current="1">12 STATION ROAD, MARPLE, STOCKPORT SK6 6AL</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095777</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>DA</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mr JOHN LYCEE</name>
+                        <address current="1">12 STATION ROAD, MARPLE, STOCKPORT SK6 6AL</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095795</insolvencyorderid>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>DR</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mr JOHN LYCEE</name>
+                        <address current="1">12 STATION ROAD, MARPLE, STOCKPORT SK6 6AL</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>6095813</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>FT</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2187031</caseref>
+                        <name>Mr JOHN LYCEE</name>
+                        <address current="1">12 STATION ROAD, MARPLE, STOCKPORT SK6 6AL</address>
+                     </bai>
+                  </bais>
+                  <searches>
+                     <search>
+                        <searchref>{24FCD750-53AC-47E5-8D42-78586A86D3D8}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T15:19:45</searchdate>
+                        <name>Mr John Lycee</name>
+                        <address current="1">12, SK66AL</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{5514CF34-476F-4DBD-878A-346C330B31DF}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T12:55:47</searchdate>
+                        <name>JOHN LYCEE</name>
+                        <dob>1990-11-10</dob>
+                        <address current="1">12, SK6 6AL</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{44277E77-2F7E-49C3-BCDC-A93DD2AFC4C4}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-10T10:21:08</searchdate>
+                        <name>JOHN LYCEE</name>
+                        <dob>1990-11-10</dob>
+                        <address current="1">12, SK6 6AL</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{8FA88AE8-5359-4EA9-A82A-0DA03D674A3D}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-07T12:04:06</searchdate>
+                        <name>JOHN LYCEE</name>
+                        <dob>1990-11-10</dob>
+                        <address current="1">12, SK6 6AL</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{238BF63C-BC89-4659-8503-6AC45E105621}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-07T11:44:24</searchdate>
+                        <name>Mr John Lycee</name>
+                        <address current="1">12, SK6 6AL</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{A59479CC-2A87-44FC-96AB-6895A1406A1E}</searchref>
+                        <searchorgtype>OF</searchorgtype>
+                        <searchorgname>Optimus CR PreProd</searchorgname>
+                        <searchunitname>Optimus CR PreProd</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>Optimus CR API PreProd</username>
+                        <searchpurpose>CL</searchpurpose>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-07T09:07:48</searchdate>
+                        <name>JOHN LYCEE</name>
+                        <dob>1990-11-10</dob>
+                        <address current="1">12, SK6 6AL</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                     <search>
+                        <searchref>{0F946904-8D14-484C-9F8E-9B86EA636D4F}</searchref>
+                        <searchorgtype>BA</searchorgtype>
+                        <searchorgname>Callcredit</searchorgname>
+                        <searchunitname>Callcredit</searchunitname>
+                        <ownsearch>1</ownsearch>
+                        <subsequentenquiry>0</subsequentenquiry>
+                        <username>matthew+h01</username>
+                        <searchpurpose>CA</searchpurpose>
+                        <credittype>ZF</credittype>
+                        <term>0</term>
+                        <jointapplication>0</jointapplication>
+                        <searchdate>2019-06-07T08:19:27</searchdate>
+                        <name>Mr JOHN LYCEE</name>
+                        <address current="1">12, SK6 6AL</address>
+                        <tpoptout>0</tpoptout>
+                        <transient>0</transient>
+                        <linktype>0</linktype>
+                     </search>
+                  </searches>
+                  <addresslinks>
+                     <addresses>
+                        <address current="1" addressid="1" declared="1">12 STATION ROAD, STOCKPORT, CHESHIRE, SK6 6AL</address>
+                        <address current="0" addressid="2" declared="0">27 LILAC COURT, CAMBRIDGE, CB1 7AY</address>
+                        <address current="0" addressid="3" declared="0">22 SAMBOURNE DRIVE, BIRMINGHAM, B34 7JF</address>
+                        <address current="0" addressid="4" declared="0">63 BROOK END, FAZELEY, TAMWORTH, B78 3RS</address>
+                        <address current="0" addressid="5" declared="0">90 QUEENS WAY, TAMWORTH, B79 8QN</address>
+                        <address current="0" addressid="6" declared="0">23 DERWENT DRIVE, DONCASTER, DN4 5PB</address>
+                        <address current="0" addressid="7" declared="0">19 UPPER HIBBERT LANE, STOCKPORT, CHESHIRE, SK6 7JQ</address>
+                     </addresses>
+                  </addresslinks>
+                  <aliaslinks>
+                     <aliaslink declared="0">
+                        <aliasid>18067884</aliasid>
+                        <name>MR JOHN LYCEE</name>
+                        <alias>MRS DEBBIE APPLE</alias>
+                        <creationdate>2019-06-07</creationdate>
+                        <lastconfdate>2019-06-07</lastconfdate>
+                        <supplierdetails>
+                           <suppliername>Nationwide Building Society</suppliername>
+                           <suppliertypecode>BS</suppliertypecode>
+                        </supplierdetails>
+                     </aliaslink>
+                  </aliaslinks>
+                  <associatelinks/>
+                  <cifas/>
+                  <rtr/>
+                  <accs>
+                     <acc>
+                        <accountid>18122415</accountid>
+                        <shaccholderid>20631713</shaccholderid>
+                        <memberportid>471</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>Barclays Bank plc</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MR LUKE OLIVER</name>
+                           <address current="1">65 EDINBURGH DRIVE;BEDLINGTON;;;;;; NE226NY</address>
+                           <dob>1999-04-16</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2015-06-15</startdate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2018-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-09" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-08" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-07" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-06" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2018-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-11" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-09" bal="0" limit="0" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>***************615</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>N</status>
+                           <dateupdated>2018-10-31</dateupdated>
+                           <acctypecode>CA</acctypecode>
+                           <accgroupid>7</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <limit>0</limit>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2015-06-15</paystartdate>
+                           <accstartdate>2015-06-15</accstartdate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>33044340</accountid>
+                        <shaccholderid>33219496</shaccholderid>
+                        <memberportid>595</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>O2 UK Limited</suppliername>
+                           <suppliertypecode>TC</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MR LUKE OLIVER</name>
+                           <address current="1">65 EDINBURGH DRIVE;;BEDLINGTON; NE226NY</address>
+                           <dob>1999-04-16</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2018-11-01</startdate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2018-11" bal="0" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************8394</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>N</status>
+                           <dateupdated>2018-11-01</dateupdated>
+                           <acctypecode>TM</acctypecode>
+                           <accgroupid>4</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <paystartdate>2018-11-01</paystartdate>
+                           <accstartdate>2018-11-01</accstartdate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>33044985</accountid>
+                        <shaccholderid>33221484</shaccholderid>
+                        <memberportid>595</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>O2 UK Limited</suppliername>
+                           <suppliertypecode>TC</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MR LUKE OLIVER</name>
+                           <address current="1">65 EDINBURGH DRIVE;;BEDLINGTON; NE226NY</address>
+                           <dob>1999-04-16</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2018-11-01</startdate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2018-11" bal="604" acc="UC" pay="U"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************8600</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>N</status>
+                           <dateupdated>2018-11-01</dateupdated>
+                           <acctypecode>UL</acctypecode>
+                           <accgroupid>1</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>604</balance>
+                           <openbalance>604</openbalance>
+                           <paystartdate>2018-11-01</paystartdate>
+                           <accstartdate>2018-11-01</accstartdate>
+                           <regpayment>17</regpayment>
+                           <repayperiod>36</repayperiod>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                  </accs>
+               </applicant>
+            </creditreport>
+         </SearchResult>
+      </Search07aResponse>
+   </soap:Body>
+</soap:Envelope>

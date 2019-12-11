@@ -1,0 +1,32 @@
+search dispute steps;
+
+create new consumer
+do a CL search type via soapui to produce the search footprint
+then do a CD search type to see the search histpory item under <searches> element
+take note of the searchref - e.g. 8C96B63F-CFCD-4FCF-A4F4-25D286FFB3B3
+row then needs to be found on db instance CIGPLLFBDBBZDBI\BUSINESS in the table [SearchHistory_Online].[dbo].[SearchHistory] and the search id changed to match one that the GetSearchdetailsForOptimus sproc will find data for - one of the following;
+
+'F7C2A476-B715-42D9-93E1-34374DB8260C' (USE THIS ONE - as there is matchign datascope for jack russel)
+'E0194962-AA2D-4F34-BF6B-7CC99C06DA22'
+'9B7286BA-50D0-4D55-8746-62D319631F15'
+'BCC2CA80-073E-4A33-872B-D4FDBE120A26'
+
+use following sql as template;
+
+update [SearchHistory_Online].[dbo].[SearchHistory]
+set SearchId = 'F7C2A476-B715-42D9-93E1-34374DB8260C'
+where SearchId = '8C96B63F-CFCD-4FCF-A4F4-25D286FFB3B3'
+  and Surname = 'MASSEY'
+  
+note for system test, the search sproc called is UP_GetSearchDetailsForOptimus on CIGPLLFBDBBZDBI\BUSINESS
+Server=CIGPLLFBDBBPTS\\BureauPrimary;Database=Audit;Trusted_Connection=True;
+
+
+
+SearchId								UserId									UnitId									OrganisationId							AuditDateTime	UserNameTimeOfSearch	UserNameNow	OrgNameTimeOfSearch	OrgNameNow	UnitNameTimeOfSearch	UnitNameNow	SearchPurpose	UnitAlias
+F7C2A476-B715-42D9-93E1-34374DB8260C	CF5F4D1F-9BE5-4FEB-9B3A-07235683E0A1	D6423278-4F1E-4913-B2BD-40F320E8CCE6	1489C490-9E6C-44FD-81DB-9D06E938EB83	27:34.9	CSST	CSST	Callreport Summary Section Tests	Callreport Summary Section Tests	Callreport Summary Section Tests	Callreport Summary Section Tests	CA	CSST
+E0194962-AA2D-4F34-BF6B-7CC99C06DA22	8FACB376-2D0F-41B2-AC1C-29AA463C9B67	3DA95C79-90D1-4DF2-ABFB-4737020E25CA	050DC7B4-A749-4AE5-8CD5-B656052B733F	02:08.2	APISTU	APISTU	QA OI COMPANIES	QA OI COMPANIES	QA XOI1	QA XOI1	TS	QA XOI1
+9B7286BA-50D0-4D55-8746-62D319631F15	CF5F4D1F-9BE5-4FEB-9B3A-07235683E0A1	D6423278-4F1E-4913-B2BD-40F320E8CCE6	1489C490-9E6C-44FD-81DB-9D06E938EB83	32:29.8	CSST	CSST	Callreport Summary Section Tests	Callreport Summary Section Tests	Callreport Summary Section Tests	Callreport Summary Section Tests	CA	CSST
+BCC2CA80-073E-4A33-872B-D4FDBE120A26	CF5F4D1F-9BE5-4FEB-9B3A-07235683E0A1	D6423278-4F1E-4913-B2BD-40F320E8CCE6	1489C490-9E6C-44FD-81DB-9D06E938EB83	29:19.0	CSST	CSST	Callreport Summary Section Tests	Callreport Summary Section Tests	Callreport Summary Section Tests	Callreport Summary Section Tests	CA	CSST
+
+

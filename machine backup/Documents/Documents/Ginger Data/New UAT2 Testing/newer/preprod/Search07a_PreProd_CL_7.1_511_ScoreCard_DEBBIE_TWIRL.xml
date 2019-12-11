@@ -1,0 +1,1223 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <Search07aResponse xmlns="urn:callcredit.co.uk/soap:callreport7">
+         <SearchResult>
+            <jobdetails>
+               <searchid>{A63EAE5F-6950-47C7-95C7-4035DE5B8DDF}</searchid>
+               <cast>003.001.7.2.1.2.0.50829274.0</cast>
+               <pstv>50829274</pstv>
+               <ls>0</ls>
+               <searchdate>2019-10-17T10:59:12</searchdate>
+            </jobdetails>
+            <creditrequest schemaversion="7.1" datasets="255">
+               <idoutput>1</idoutput>
+               <logscore>1</logscore>
+               <applicant>
+                  <address>
+                     <buildingno>15</buildingno>
+                     <postcode>SK6 7JQ</postcode>
+                  </address>
+                  <name>
+                     <forename>DEBBIE</forename>
+                     <surname>BIRCH</surname>
+                  </name>
+                  <dob>1975-10-18</dob>
+               </applicant>
+               <score>0</score>
+               <purpose>CD</purpose>
+            </creditrequest>
+            <picklist maxaddressitems="20" maxnameitems="9" picklist="1" regenerated="0">
+               <applicant id="1" reporttype="3">
+                  <address addressid="1">
+                     <addressinput>
+                        <abodeno/>
+                        <buildingno>15</buildingno>
+                        <buildingname/>
+                        <street1/>
+                        <street2/>
+                        <sublocality/>
+                        <locality/>
+                        <posttown/>
+                        <postcode>SK6 7JQ</postcode>
+                     </addressinput>
+                     <fullmatches reporttype="3" matchstatus="2">
+                        <fullmatch selected="1">
+                           <addressmatch>
+                              <buildingno>15</buildingno>
+                              <street1>UPPER HIBBERT LANE</street1>
+                              <locality>STOCKPORT</locality>
+                              <posttown>CHESHIRE</posttown>
+                              <postcode>SK6 7JQ</postcode>
+                              <domicileid>41318353</domicileid>
+                           </addressmatch>
+                           <name nameid="1">
+                              <nameinput>
+                                 <title/>
+                                 <forename>DEBBIE</forename>
+                                 <othernames/>
+                                 <surname>BIRCH</surname>
+                              </nameinput>
+                              <namematches reporttype="3" matchstatus="2">
+                                 <namematch selected="1">
+                                    <title>MRS</title>
+                                    <forename>DEBBIE</forename>
+                                    <surname>BIRCH</surname>
+                                    <residenceid>291116786</residenceid>
+                                    <dob>1975-10-18</dob>
+                                 </namematch>
+                              </namematches>
+                           </name>
+                        </fullmatch>
+                        <fullmatch selected="0">
+                           <addressmatch>
+                              <buildingno>15</buildingno>
+                              <street1>UPPER HIBBERT LANE</street1>
+                              <locality>STOCKPORT</locality>
+                              <posttown>CHESHIRE</posttown>
+                              <postcode>SK6 7JQ</postcode>
+                              <domicileid>41394084</domicileid>
+                           </addressmatch>
+                           <name nameid="1">
+                              <nameinput>
+                                 <title/>
+                                 <forename>DEBBIE</forename>
+                                 <othernames/>
+                                 <surname>BIRCH</surname>
+                              </nameinput>
+                              <namematches reporttype="3" matchstatus="2">
+                                 <namematch selected="1">
+                                    <title>MRS</title>
+                                    <forename>DEBBIE</forename>
+                                    <surname>BIRCH</surname>
+                                    <residenceid>292579383</residenceid>
+                                    <dob>1975-10-18</dob>
+                                 </namematch>
+                              </namematches>
+                           </name>
+                        </fullmatch>
+                        <fullmatch selected="0">
+                           <addressmatch>
+                              <buildingno>15</buildingno>
+                              <street1>UPPER HIBBERT LANE</street1>
+                              <locality>STOCKPORT</locality>
+                              <posttown>CHESHIRE</posttown>
+                              <postcode>SK6 7JQ</postcode>
+                              <domicileid>41394087</domicileid>
+                           </addressmatch>
+                           <name nameid="1">
+                              <nameinput>
+                                 <title/>
+                                 <forename>DEBBIE</forename>
+                                 <othernames/>
+                                 <surname>BIRCH</surname>
+                              </nameinput>
+                              <namematches reporttype="3" matchstatus="2">
+                                 <namematch selected="1">
+                                    <title>MRS</title>
+                                    <forename>DEBBIE</forename>
+                                    <surname>BIRCH</surname>
+                                    <residenceid>292579419</residenceid>
+                                    <dob>1975-10-18</dob>
+                                 </namematch>
+                              </namematches>
+                           </name>
+                        </fullmatch>
+                     </fullmatches>
+                  </address>
+               </applicant>
+            </picklist>
+            <creditreport searchid="{A63EAE5F-6950-47C7-95C7-4035DE5B8DDF}" linktype="0">
+               <applicant reporttype="3" tpoptout="0" autosearchmaxexceeded="0" ageflag="3" reporttitle="DEBBIE BIRCH ">
+                  <addressconfs>
+                     <addressconf pafvalid="1" otherresidents="1">
+                        <address current="1">15 UPPER HIBBERT LANE, STOCKPORT, CHESHIRE SK6 7JQ</address>
+                        <resident matchtype="IM" currentname="1" declaredalias="0" IndividualType="Individual: Current Name" SameFamilyType="Non Same Family resident" AssociateType="Non Associate resident">
+                           <residenceid>291116786</residenceid>
+                           <name>DEBBIE BIRCH</name>
+                           <duration>P67M</duration>
+                           <startdate>2014-03-01</startdate>
+                           <ervalid>1</ervalid>
+                           <erhistory>
+                              <erid>283696209</erid>
+                              <startdate>2014-03-01</startdate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                        </resident>
+                     </addressconf>
+                     <addressconf pafvalid="1" otherresidents="0">
+                        <address current="0" undeclaredaddresstype="3">89 PURBECK DALE, DAWLEY, TELFORD TF4 2QW</address>
+                        <resident matchtype="IM" currentname="0" declaredalias="1" IndividualType="Individual: Declared Alias" SameFamilyType="Non Same Family resident" AssociateType="Non Associate resident">
+                           <residenceid>39434453</residenceid>
+                           <name>KAREN SUSAN HAMMONDS</name>
+                           <duration>P386M</duration>
+                           <startdate>1985-10-28</startdate>
+                           <enddate>2017-12-01</enddate>
+                           <ervalid>3</ervalid>
+                           <erhistory>
+                              <erid>226471940</erid>
+                              <startdate>2014-02-17</startdate>
+                              <enddate>2017-12-01</enddate>
+                              <optout>1</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>210176843</erid>
+                              <startdate>2012-10-28</startdate>
+                              <enddate>2014-02-17</enddate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>184795967</erid>
+                              <startdate>2010-10-28</startdate>
+                              <enddate>2012-10-28</enddate>
+                              <optout>1</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>88624486</erid>
+                              <startdate>1985-10-28</startdate>
+                              <enddate>2010-10-28</enddate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                        </resident>
+                        <resident matchtype="SM" currentname="0" declaredalias="0" IndividualType="Non individual resident" SameFamilyType="Same Family: Same Surname" AssociateType="Associate: Proper Associate">
+                           <residenceid>39434452</residenceid>
+                           <name>GEOFFREY FREDERICK HAMMONDS</name>
+                           <duration>P386M</duration>
+                           <startdate>1985-10-28</startdate>
+                           <enddate>2017-12-01</enddate>
+                           <ervalid>3</ervalid>
+                           <erhistory>
+                              <erid>226471951</erid>
+                              <startdate>2014-02-17</startdate>
+                              <enddate>2017-12-01</enddate>
+                              <optout>1</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>210176888</erid>
+                              <startdate>2012-10-28</startdate>
+                              <enddate>2014-02-17</enddate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>184800977</erid>
+                              <startdate>2010-10-28</startdate>
+                              <enddate>2012-10-28</enddate>
+                              <optout>1</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                           <erhistory>
+                              <erid>88624475</erid>
+                              <startdate>1985-10-28</startdate>
+                              <enddate>2010-10-28</enddate>
+                              <optout>0</optout>
+                              <rollingroll>0</rollingroll>
+                           </erhistory>
+                        </resident>
+                     </addressconf>
+                  </addressconfs>
+                  <judgments>
+                     <judgment>
+                        <ccjcaseperid>18837311</ccjcaseperid>
+                        <name>LENNON POWELL</name>
+                        <address current="1">26 SELE ROAD, HERTFORD, SG14 1NG</address>
+                        <courtname>HOLYWELL</courtname>
+                        <courttype>0</courttype>
+                        <casenumber>ABC118</casenumber>
+                        <status>JG</status>
+                        <amount>262</amount>
+                        <judgmentdate>2018-10-31</judgmentdate>
+                     </judgment>
+                  </judgments>
+                  <bais>
+                     <bai>
+                        <insolvencyorderid>5966145</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <amount>150</amount>
+                        <ordertype>AO</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2180522</caseref>
+                        <name>Mrs DEBBIE BIRCH</name>
+                        <address current="1">15 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>5966163</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>BO</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2180522</caseref>
+                        <name>Mrs DEBBIE BIRCH</name>
+                        <address current="1">15 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>5966181</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>DA</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2180522</caseref>
+                        <name>Mrs DEBBIE BIRCH</name>
+                        <address current="1">15 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>5966199</insolvencyorderid>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>DR</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2180522</caseref>
+                        <name>Mrs DEBBIE BIRCH</name>
+                        <address current="1">15 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                     <bai>
+                        <insolvencyorderid>5966217</insolvencyorderid>
+                        <courtname>TESTTOWN</courtname>
+                        <currentstatus>A</currentstatus>
+                        <ordertype>FT</ordertype>
+                        <orderdate>2018-07-31</orderdate>
+                        <caseyear>2017</caseyear>
+                        <caseref>2180522</caseref>
+                        <name>Mrs DEBBIE BIRCH</name>
+                        <address current="1">15 UPPER HIBBERT LANE, MARPLE, STOCKPORT SK6 7JQ</address>
+                     </bai>
+                  </bais>
+                  <addresslinks>
+                     <addresses>
+                        <address current="1" addressid="1" declared="1">15 UPPER HIBBERT LANE, STOCKPORT, CHESHIRE, SK6 7JQ</address>
+                        <address current="0" undeclaredaddresstype="5" addressid="2" declared="0">38 DANE ROAD, SALE, M33 7AR</address>
+                        <address current="0" undeclaredaddresstype="5" addressid="3" declared="0">8 STATION ROAD, STOCKPORT, CHESHIRE, SK6 6AL</address>
+                        <address current="0" undeclaredaddresstype="5" addressid="4" declared="0">32 GOODWOOD CRESCENT, TIMPERLEY, ALTRINCHAM, WA15 7BD</address>
+                        <address current="0" undeclaredaddresstype="3" addressid="5" declared="0">89 PURBECK DALE, DAWLEY, TELFORD, TF4 2QW</address>
+                     </addresses>
+                     <links>
+                        <link from="2" to="3">
+                           <addlinkid>486530636</addlinkid>
+                           <creationdate>2017-03-02</creationdate>
+                           <lastconfdate>2018-03-01</lastconfdate>
+                           <supplierdetails>
+                              <suppliername>Tesco Mobile Telecoms</suppliername>
+                              <suppliertypecode>TC</suppliertypecode>
+                           </supplierdetails>
+                        </link>
+                        <link from="5" to="1">
+                           <addlinkid>486529497</addlinkid>
+                           <creationdate>2017-03-02</creationdate>
+                           <lastconfdate>2017-03-02</lastconfdate>
+                           <supplierdetails>
+                              <suppliername>The Co-operative Bank</suppliername>
+                              <suppliertypecode>BK</suppliertypecode>
+                           </supplierdetails>
+                        </link>
+                        <link from="4" to="3">
+                           <addlinkid>486534069</addlinkid>
+                           <creationdate>2017-02-28</creationdate>
+                           <lastconfdate>2017-05-31</lastconfdate>
+                           <supplierdetails>
+                              <suppliername>Barclaycard</suppliername>
+                              <suppliertypecode>CC</suppliertypecode>
+                           </supplierdetails>
+                        </link>
+                     </links>
+                  </addresslinks>
+                  <aliaslinks/>
+                  <associatelinks>
+                     <associatelink declaredaddress="0">
+                        <associd>44399742</associd>
+                        <name>MR GEOFFREY FREDERICK HAMMONDS</name>
+                        <creationdate>2013-03-31</creationdate>
+                        <lastconfdate>2013-03-31</lastconfdate>
+                        <supplierdetails>
+                           <suppliername>Barclays Bank plc</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                     </associatelink>
+                  </associatelinks>
+                  <cifas/>
+                  <rtr/>
+                  <accs>
+                     <acc>
+                        <accountid>3081949</accountid>
+                        <shaccholderid>3035985</shaccholderid>
+                        <memberportid>183</memberportid>
+                        <supplierdetails apacs="1">
+                           <suppliername>The Co-operative Bank</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN S HAMMONDS</name>
+                           <address current="1">68 GIBRALTAR LANE;DENTON;MANCHESTER;;;;; M34 7PY</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>D</statuscode>
+                           <startdate>2012-06-25</startdate>
+                           <enddate>2018-10-03</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2018-10" bal="0" acc="ST" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-09" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-08" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-07" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-06" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-05" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-04" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-03" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-02" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2018-01" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-12" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-11" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-10" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-09" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-08" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-07" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-06" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-05" bal="0" limit="2000" acc="UC" pay="U" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-04" bal="0" limit="2000" acc="UC" pay="U" stmtbal="90" payamt="90" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-03" bal="91" limit="2000" acc="UC" pay="U" stmtbal="90" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-02" bal="91" limit="2000" acc="OK" pay="0" stmtbal="157" payamt="157" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-01" bal="56" limit="2000" acc="OK" pay="0" stmtbal="155" payamt="155" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-12" bal="158" limit="2000" acc="OK" pay="0" stmtbal="118" payamt="118" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-11" bal="219" limit="2000" acc="OK" pay="0" stmtbal="103" payamt="103" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-10" bal="104" limit="2000" acc="OK" pay="0" stmtbal="52" payamt="52" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-09" bal="84" limit="2000" acc="OK" pay="0" stmtbal="13" payamt="13" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-08" bal="42" limit="2000" acc="OK" pay="0" stmtbal="-5" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-07" bal="0" limit="2000" acc="OK" pay="0" stmtbal="3" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-06" bal="-20" limit="2000" acc="OK" pay="0" stmtbal="173" payamt="150" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-05" bal="94" limit="2000" acc="OK" pay="0" stmtbal="80" payamt="80" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-04" bal="137" limit="2000" acc="OK" pay="0" stmtbal="154" payamt="154" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-03" bal="155" limit="2000" acc="OK" pay="0" stmtbal="93" payamt="93" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-02" bal="137" limit="2000" acc="OK" pay="0" stmtbal="262" payamt="262" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-01" bal="339" limit="2000" acc="OK" pay="0" stmtbal="133" payamt="133" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-12" bal="126" limit="2000" acc="OK" pay="0" stmtbal="169" payamt="169" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-11" bal="259" limit="2000" acc="OK" pay="0" stmtbal="129" payamt="129" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-10" bal="167" limit="2000" acc="OK" pay="0" stmtbal="95" payamt="95" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-09" bal="225" limit="2000" acc="OK" pay="0" stmtbal="51" payamt="51" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-08" bal="89" limit="2000" acc="OK" pay="0" stmtbal="136" payamt="136" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-07" bal="183" limit="2000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-06" bal="0" limit="2000" acc="OK" pay="0" stmtbal="25" payamt="25" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-05" bal="26" limit="2000" acc="OK" pay="0" stmtbal="108" payamt="108" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-04" bal="109" limit="2000" acc="OK" pay="0" stmtbal="39" payamt="39" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-03" bal="117" limit="2000" acc="OK" pay="0" stmtbal="89" payamt="89" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-02" bal="90" limit="2000" acc="OK" pay="0" stmtbal="107" payamt="107" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-01" bal="46" limit="2000" acc="OK" pay="0" stmtbal="190" payamt="190" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-12" bal="208" limit="2000" acc="OK" pay="0" stmtbal="200" payamt="200" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-11" bal="222" limit="2000" acc="OK" pay="0" stmtbal="126" payamt="126" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-10" bal="202" limit="2000" acc="OK" pay="0" stmtbal="310" payamt="310" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-09" bal="218" limit="2000" acc=".." pay="?"/>
+                           <ah m="2014-08" bal="218" limit="2000" acc="OK" pay="0" stmtbal="221" payamt="221" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-07" bal="305" limit="2000" acc="OK" pay="0" stmtbal="315" payamt="315" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-06" bal="451" limit="2000" acc="OK" pay="0" stmtbal="202" payamt="202" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-05" bal="337" limit="2000" acc="OK" pay="0" stmtbal="189" payamt="189" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-04" bal="299" limit="2000" acc="OK" pay="0" stmtbal="172" payamt="172" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-03" bal="235" limit="2000" acc="OK" pay="0" stmtbal="163" payamt="163" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-02" bal="252" limit="2000" acc="OK" pay="0" stmtbal="243" payamt="243" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-01" bal="295" limit="2000" acc="OK" pay="0" stmtbal="607" payamt="607" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-12" bal="67" limit="2000" acc="OK" pay="0" stmtbal="197" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-11" bal="320" limit="2000" acc="OK" pay="0" stmtbal="342" payamt="342" cashadvcount="0" cashadvtotal="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************1045</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2018-10-03</dateupdated>
+                           <acctypecode>CC</acctypecode>
+                           <accgroupid>3</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2012-06-25</paystartdate>
+                           <accstartdate>2012-06-25</accstartdate>
+                           <accenddate>2018-10-03</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                           <promotionalrate>0</promotionalrate>
+                           <statementbalance>0</statementbalance>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>50448</accountid>
+                        <shaccholderid>73303</shaccholderid>
+                        <memberportid>841</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>Shawbrook Bank Ltd</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN SUSAN HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECK DALE;DAWLEY;TELFORD;SHROPSHIRE TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>D</statuscode>
+                           <startdate>2014-06-25</startdate>
+                           <enddate>2017-09-06</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2017-09" bal="0" acc="ST" pay="U"/>
+                           <ah m="2017-08" bal="1363" acc="QY" pay="U"/>
+                           <ah m="2017-07" bal="1363" acc="QY" pay="U"/>
+                           <ah m="2017-06" bal="1357" acc="OK" pay="0"/>
+                           <ah m="2017-05" bal="1407" acc="OK" pay="0"/>
+                           <ah m="2017-04" bal="1457" acc="OK" pay="0"/>
+                           <ah m="2017-03" bal="1506" acc="OK" pay="0"/>
+                           <ah m="2017-02" bal="1556" acc="OK" pay="0"/>
+                           <ah m="2017-01" bal="1604" acc="OK" pay="0"/>
+                           <ah m="2016-12" bal="1651" acc="OK" pay="0"/>
+                           <ah m="2016-11" bal="1699" acc="OK" pay="0"/>
+                           <ah m="2016-10" bal="1746" acc="OK" pay="0"/>
+                           <ah m="2016-09" bal="1792" acc="OK" pay="0"/>
+                           <ah m="2016-08" bal="1838" acc="OK" pay="0"/>
+                           <ah m="2016-07" bal="1884" acc="OK" pay="0"/>
+                           <ah m="2016-06" bal="1929" acc="OK" pay="0"/>
+                           <ah m="2016-05" bal="1974" acc="OK" pay="0"/>
+                           <ah m="2016-04" bal="2018" acc="OK" pay="0"/>
+                           <ah m="2016-03" bal="2062" acc="OK" pay="0"/>
+                           <ah m="2016-02" bal="2106" acc="OK" pay="0"/>
+                           <ah m="2016-01" bal="2149" acc="OK" pay="0"/>
+                           <ah m="2015-12" bal="2192" acc="OK" pay="0"/>
+                           <ah m="2015-11" bal="2234" acc="OK" pay="0"/>
+                           <ah m="2015-10" bal="2276" acc="OK" pay="0"/>
+                           <ah m="2015-09" bal="2318" acc="OK" pay="0"/>
+                           <ah m="2015-08" bal="2358" acc="OK" pay="0"/>
+                           <ah m="2015-07" bal="2399" acc="OK" pay="0"/>
+                           <ah m="2015-06" bal="2440" acc="OK" pay="0"/>
+                           <ah m="2015-05" bal="2479" acc="OK" pay="0"/>
+                           <ah m="2015-04" bal="2519" acc="OK" pay="0"/>
+                           <ah m="2015-03" bal="2558" acc="OK" pay="0"/>
+                           <ah m="2015-02" bal="2599" acc="OK" pay="0"/>
+                           <ah m="2015-01" bal="2637" acc="OK" pay="0"/>
+                           <ah m="2014-12" bal="2675" acc="OK" pay="0"/>
+                           <ah m="2014-11" bal="2713" acc="OK" pay="0"/>
+                           <ah m="2014-10" bal="2750" acc="OK" pay="0"/>
+                           <ah m="2014-09" bal="2788" acc="OK" pay="0"/>
+                           <ah m="2014-08" bal="2824" acc="OK" pay="0"/>
+                           <ah m="2014-07" bal="2860" acc="OK" pay="0"/>
+                           <ah m="2014-06" bal="2896" acc="UC" pay="U"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************6001</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2017-09-01</dateupdated>
+                           <acctypecode>UL</acctypecode>
+                           <accgroupid>1</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <openbalance>2896</openbalance>
+                           <paystartdate>2014-06-25</paystartdate>
+                           <accstartdate>2014-06-25</accstartdate>
+                           <accenddate>2017-09-06</accenddate>
+                           <regpayment>63</regpayment>
+                           <repayperiod>60</repayperiod>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>627056</accountid>
+                        <shaccholderid>627056</shaccholderid>
+                        <memberportid>230</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>JD WILLIAMS TA AMBROSE WILSON</suppliername>
+                           <suppliertypecode>MO</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89;PURBECK DALE;DAWLEY;TELFORD;;;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>1981-08-15</startdate>
+                           <enddate>2015-09-20</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2015-09" bal="0" acc="ST" pay="0"/>
+                           <ah m="2015-08" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2015-07" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2015-06" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2015-05" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2015-04" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2015-03" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2015-02" bal="52" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2015-01" bal="52" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-12" bal="26" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-11" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-10" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-09" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-08" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-07" bal="63" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-06" bal="0" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-05" bal="64" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-04" bal="50" limit="1500" acc="OK" pay="0"/>
+                           <ah m="2014-03" acc="DT" pay="U"/>
+                           <ah m="2014-02" acc="DT" pay="U"/>
+                           <ah m="2014-01" acc="DT" pay="U"/>
+                           <ah m="2013-12" acc="DT" pay="U"/>
+                           <ah m="2013-11" acc="DT" pay="U"/>
+                           <ah m="2013-10" acc="DT" pay="U"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************1AWL</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2015-09-20</dateupdated>
+                           <acctypecode>MO</acctypecode>
+                           <accgroupid>6</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <openbalance>144</openbalance>
+                           <paystartdate>1981-08-15</paystartdate>
+                           <accstartdate>1981-08-15</accstartdate>
+                           <accenddate>2015-09-20</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>701443</accountid>
+                        <shaccholderid>220504</shaccholderid>
+                        <memberportid>934</memberportid>
+                        <supplierdetails apacs="1">
+                           <suppliername>TSB Credit Card</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN S HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECK DALE;DAWLEY;TELFORD;SHROPSHIRE;;;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2001-04-09</startdate>
+                           <enddate>2017-02-28</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2017-02" bal="0" acc="ST" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-01" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-12" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-11" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-10" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-09" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-08" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-07" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-06" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-05" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-04" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-03" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-02" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-01" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-12" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-11" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-10" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-09" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-08" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-07" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-06" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-05" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-04" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-03" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-02" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-01" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-12" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-11" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-10" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-09" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-08" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-07" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-06" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-05" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-04" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-03" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-02" bal="0" limit="4950" acc="OK" pay="0" stmtbal="0" payamt="98" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-01" bal="0" limit="4950" acc="OK" pay="0" stmtbal="98" payamt="98" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-12" bal="98" limit="4950" acc="OK" pay="0" stmtbal="11" payamt="11" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-11" bal="21" limit="4950" acc="OK" pay="0" stmtbal="3" payamt="3" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-10" bal="0" limit="4950" acc="OK" pay="0" stmtbal="11" payamt="11" cashadvcount="0" cashadvtotal="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************3916</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2017-02-28</dateupdated>
+                           <acctypecode>CC</acctypecode>
+                           <accgroupid>3</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <openbalance>1694</openbalance>
+                           <paystartdate>2001-04-09</paystartdate>
+                           <accstartdate>2001-04-09</accstartdate>
+                           <accenddate>2017-02-28</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                           <promotionalrate>0</promotionalrate>
+                           <statementbalance>0</statementbalance>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>706856</accountid>
+                        <shaccholderid>723886</shaccholderid>
+                        <memberportid>488</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>WITT UK</suppliername>
+                           <suppliertypecode>MO</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECK DALE;DAWLEY;TELFORD;SHROPSHIRE;;;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2011-06-23</startdate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2019-03" bal="0" limit="1000" acc=".." pay="?"/>
+                           <ah m="2019-02" bal="0" limit="1000" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>***************701</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>N</status>
+                           <dateupdated>2019-03-31</dateupdated>
+                           <acctypecode>MO</acctypecode>
+                           <accgroupid>6</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <limit>1000</limit>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2011-06-23</paystartdate>
+                           <accstartdate>2011-06-23</accstartdate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>1938251</accountid>
+                        <shaccholderid>2249913</shaccholderid>
+                        <memberportid>184</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>The Co-operative Bank</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN S HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECK DALE;DAWLEY;TELFORD;;;;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>D</statuscode>
+                           <startdate>2012-06-22</startdate>
+                           <enddate>2017-06-30</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2017-07" bal="0" limit="0" acc="ST" pay="0"/>
+                           <ah m="2017-06" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-11" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-09" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-08" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-07" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-06" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-11" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-09" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-08" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-07" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-06" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-11" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-09" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-08" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-07" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-06" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2013-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2013-11" bal="0" limit="0" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************1206</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2017-07-03</dateupdated>
+                           <acctypecode>CA</acctypecode>
+                           <accgroupid>7</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <limit>0</limit>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2012-06-22</paystartdate>
+                           <accstartdate>2012-06-22</accstartdate>
+                           <accenddate>2017-06-30</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>21562546</accountid>
+                        <shaccholderid>21572712</shaccholderid>
+                        <memberportid>230</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>JD WILLIAMS TA FIFTY PLUS</suppliername>
+                           <suppliertypecode>MO</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89;PURBECK DALE;DAWLEY;TELFORD;;;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2015-05-13</startdate>
+                           <enddate>2015-12-20</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2015-12" bal="0" acc="ST" pay="0"/>
+                           <ah m="2015-11" bal="0" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-10" bal="0" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-09" bal="0" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-08" bal="0" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-07" bal="0" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-06" bal="0" limit="200" acc="OK" pay="0"/>
+                           <ah m="2015-05" bal="36" limit="200" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************5FPS</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2015-12-20</dateupdated>
+                           <acctypecode>MO</acctypecode>
+                           <accgroupid>6</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <openbalance>36</openbalance>
+                           <paystartdate>2015-05-13</paystartdate>
+                           <accstartdate>2015-05-13</accstartdate>
+                           <accenddate>2015-12-20</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>3180025</accountid>
+                        <shaccholderid>3180025</shaccholderid>
+                        <memberportid>580</memberportid>
+                        <supplierdetails apacs="1">
+                           <suppliername>Home Retail Group Services Ltd</suppliername>
+                           <suppliertypecode>CC</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECK DALE;DAWLEY TELFORD;SHROPSHIRE;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2007-06-09</startdate>
+                           <enddate>2013-11-29</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2013-11" bal="0" acc="ST" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-10" bal="0" limit="1000" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************4435</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2013-11-29</dateupdated>
+                           <acctypecode>CC</acctypecode>
+                           <accgroupid>3</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <paystartdate>2007-06-09</paystartdate>
+                           <accstartdate>2007-06-09</accstartdate>
+                           <accenddate>2013-11-29</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <promotionalrate>0</promotionalrate>
+                           <statementbalance>0</statementbalance>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>3553407</accountid>
+                        <shaccholderid>1831687</shaccholderid>
+                        <memberportid>767</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>British Gas - Electric</suppliername>
+                           <suppliertypecode>UT</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS YVETTE PRICKETT</name>
+                           <address current="0" undeclaredaddresstype="3">20 WESTBROOK CRESCENT;COCKFOSTERS;BARNET;HERTFORDSHIRE;;;; EN4 9AR</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2008-08-05</startdate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2018-09" bal="121" limit="0" acc=".." pay="?"/>
+                           <ah m="2018-08" bal="121" limit="0" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************2668</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>N</status>
+                           <dateupdated>2018-09-09</dateupdated>
+                           <acctypecode>EE</acctypecode>
+                           <accgroupid>5</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>121</balance>
+                           <limit>0</limit>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2008-08-05</paystartdate>
+                           <accstartdate>2008-08-05</accstartdate>
+                           <regpayment>44</regpayment>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>944498</accountid>
+                        <shaccholderid>243172</shaccholderid>
+                        <memberportid>934</memberportid>
+                        <supplierdetails apacs="1">
+                           <suppliername>TSB Credit Card</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN S HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECK DALE;DAWLEY;TELFORD;;;;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>N</statuscode>
+                           <startdate>2007-01-11</startdate>
+                           <enddate>2017-02-28</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2017-02" bal="0" acc="ST" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2017-01" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-12" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-11" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-10" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-09" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-08" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-07" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-06" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-05" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-04" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-03" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-02" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2016-01" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-12" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-11" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-10" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-09" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-08" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-07" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-06" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-05" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-04" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-03" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-02" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2015-01" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-12" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-11" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-10" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-09" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-08" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-07" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-06" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-05" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-04" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-03" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-02" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2014-01" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-12" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-11" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                           <ah m="2013-10" bal="0" limit="4075" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************3858</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2017-02-28</dateupdated>
+                           <acctypecode>CC</acctypecode>
+                           <accgroupid>3</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2007-01-11</paystartdate>
+                           <accstartdate>2007-01-11</accstartdate>
+                           <accenddate>2017-02-28</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                           <promotionalrate>0</promotionalrate>
+                           <statementbalance>0</statementbalance>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>21839337</accountid>
+                        <shaccholderid>21813110</shaccholderid>
+                        <memberportid>230</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>JD WILLIAMS TA PREMIER MAN</suppliername>
+                           <suppliertypecode>MO</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89;PURBECK DALE;DAWLEY;TELFORD;;;; TF4 2QW</address>
+                           <statuscode>N</statuscode>
+                           <startdate>2015-08-06</startdate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2018-10" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-09" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-08" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-07" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-06" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-05" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-04" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-03" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-02" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2018-01" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-12" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-11" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-10" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-09" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-08" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-07" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-06" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-05" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-04" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-03" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-02" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2017-01" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-12" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-11" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-10" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-09" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-08" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-07" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-06" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-05" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-04" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-03" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-02" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2016-01" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-12" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-11" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-10" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-09" bal="-4" limit="400" acc="OK" pay="0"/>
+                           <ah m="2015-08" bal="-11" limit="200" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************5PMA</accno>
+                           <accsuffix>0</accsuffix>
+                           <joint>0</joint>
+                           <status>N</status>
+                           <dateupdated>2018-10-20</dateupdated>
+                           <acctypecode>MO</acctypecode>
+                           <accgroupid>6</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>-4</balance>
+                           <limit>400</limit>
+                           <openbalance>11</openbalance>
+                           <paystartdate>2015-08-06</paystartdate>
+                           <accstartdate>2015-08-06</accstartdate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>2755340</accountid>
+                        <shaccholderid>4896724</shaccholderid>
+                        <memberportid>766</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>British Gas - Gas</suppliername>
+                           <suppliertypecode>UT</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN S HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECK DALE;DAWLEY;TELFORD;;;;; TF4 2QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>D</statuscode>
+                           <startdate>2008-08-06</startdate>
+                           <enddate>2017-07-15</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2017-06" bal="0" limit="0" acc="ST" pay="0"/>
+                           <ah m="2017-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2017-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-11" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-09" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-08" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-07" bal="15" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-06" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2016-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-11" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-09" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-08" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-07" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-06" bal="30" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-05" bal="66" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-02" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2015-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-11" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-10" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-09" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-08" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-07" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-06" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-05" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-04" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-03" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-02" bal="8" limit="0" acc="OK" pay="0"/>
+                           <ah m="2014-01" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2013-12" bal="0" limit="0" acc="OK" pay="0"/>
+                           <ah m="2013-11" bal="0" limit="0" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>**************8009</accno>
+                           <accsuffix>2</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2017-07-15</dateupdated>
+                           <acctypecode>GE</acctypecode>
+                           <accgroupid>5</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <limit>0</limit>
+                           <openbalance>0</openbalance>
+                           <paystartdate>2008-08-06</paystartdate>
+                           <accstartdate>2008-08-06</accstartdate>
+                           <accenddate>2017-07-15</accenddate>
+                           <regpayment>31</regpayment>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                     <acc>
+                        <accountid>14003298</accountid>
+                        <shaccholderid>15591485</shaccholderid>
+                        <memberportid>471</memberportid>
+                        <supplierdetails apacs="0">
+                           <suppliername>Barclays Bank plc</suppliername>
+                           <suppliertypecode>BK</suppliertypecode>
+                        </supplierdetails>
+                        <accholderdetails>
+                           <name>MRS KAREN SUSAN HAMMONDS</name>
+                           <address current="0" undeclaredaddresstype="3">89 PURBECKDALE;DAWLEY;TELFORD;SHROPSHIRE;;;; TF42QW</address>
+                           <dob>1948-12-22</dob>
+                           <statuscode>D</statuscode>
+                           <startdate>1984-01-01</startdate>
+                           <enddate>2017-06-12</enddate>
+                        </accholderdetails>
+                        <acchistory>
+                           <ah m="2017-05" bal="0" limit="260" acc="ST" pay="0"/>
+                           <ah m="2017-04" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2017-03" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2017-02" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2017-01" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-12" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-11" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-10" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-09" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-08" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-07" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-06" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-05" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-04" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-03" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-02" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2016-01" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-12" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-11" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-10" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-09" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-08" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-07" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-06" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-05" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-04" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-03" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-02" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2015-01" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-12" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-11" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-10" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-09" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-08" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-07" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-06" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-05" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-04" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-03" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-02" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2014-01" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2013-12" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2013-11" bal="0" limit="260" acc="OK" pay="0"/>
+                           <ah m="2013-10" bal="0" limit="260" acc="OK" pay="0"/>
+                        </acchistory>
+                        <accdetails>
+                           <accno>***************700</accno>
+                           <accsuffix>2</accsuffix>
+                           <joint>0</joint>
+                           <status>S</status>
+                           <dateupdated>2017-06-30</dateupdated>
+                           <acctypecode>CA</acctypecode>
+                           <accgroupid>7</accgroupid>
+                           <currencycode>GBP</currencycode>
+                           <balance>0</balance>
+                           <limit>260</limit>
+                           <openbalance>0</openbalance>
+                           <paystartdate>1984-01-01</paystartdate>
+                           <accstartdate>1984-01-01</accstartdate>
+                           <accenddate>2017-06-12</accenddate>
+                           <repayfreqcode>M</repayfreqcode>
+                           <lumppayment>0</lumppayment>
+                        </accdetails>
+                     </acc>
+                  </accs>
+               </applicant>
+            </creditreport>
+         </SearchResult>
+      </Search07aResponse>
+   </soap:Body>
+</soap:Envelope>
