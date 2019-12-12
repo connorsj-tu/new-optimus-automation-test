@@ -1,10 +1,10 @@
-# Kalibrate Automation
+# Optimus Automation
 
-The Kalibrate-Automation project allows automated running of tests against an instance of Kalibrate-UI.
+The maven-automation_test_suite project allows automated running of tests against Optimus.
 
 ## Maven Project
 
-* Install Eclipse, create an empty project then import this project as a Maven project.  Dependencies will then install, as defined in the pom.xml file.
+* Install Eclipse, create an empty workspace then import this project as a Maven project.  Dependencies will then install, as defined in the pom.xml file.
 * Scripts can be executed using runners under \src\test\java\com\runners
 * Adjust tags in the runner file to dictate which scenarios are executed.  The following will execute all scenarios with @login and @positive tags and which do not have @wip or @ignore tags: tags = {"@login", "@positive", "~@wip", "~@ignore"}
 
@@ -21,37 +21,9 @@ The Kalibrate-Automation project allows automated running of tests against an in
 Enables colour console output in Eclipse.
 * Install "ANSI Escape in Console" from Help > Eclipse Marketplace
 
-## Prerequisites
 
-- [Docker for Windows](https://www.docker.com/docker-windows) (set to run windows containers)
+## Entry point runners
 
-## Building Docker Image
+There is currently 1 runner available to be used as entry points
 
-```powershell
-git clone git@github.com:KalibrateTechnologies/Kalibrate-Automation.git
-```
-
-```powershell
-cd Kalibrate-Automation
-```
-
-```powershell
-.\docker\Dockerbuild.ps1
-```
-## Running Docker Container
-
-```powershell
-.\docker\Dockerrun.ps1 -URL <URL> -USER <USER> -PWD <PWD>
-```
-
-* `-URL` is the parameter that specifies and points to the instance of Kalibrate-UI that the tests will be using.
-* `-USER` & `-PWD` are optional parameters that specify the login credentials for Kalibrate-UI. If not specified, these have default values.
-
-
-## Entrypoint runners
-
-There are currently 3 runners available to be used as entry points
-
-* Kalibrate_Runner_Test - the default
-* Api_Runner_Test - a runner to run api tests
-* KMobileWeb_Runner_Test - a runner for KMobile Web
+* Optimus_Runner_Test - the default
