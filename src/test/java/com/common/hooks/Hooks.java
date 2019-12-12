@@ -483,28 +483,6 @@ public class Hooks {
 	public static void tidyDB() {
 
 		reporterHelper.log("In Hooks.tidyDB(). Note this does not do anything yet for Optimus");
-//		// Kalibrate Workspaces Tidyup
-//		if(!Utils.getProperty("RUN_TYPE").equals("JENKINS")) {
-//
-//			reporterHelper.log("\tTidying Up Kalibrate WorkSpaces returning to known state - DEFAULT workspace as active");
-//		
-//			// TODO - maybe run all scripts in the defined directory?
-//			
-//			for (int j = 0; j < desiredPersonasList.size(); j++) {
-////				databaseHelper.executeSQLFile("createDEFAULTWorkspace.sql", desiredPersonasUsernameList);
-////				databaseHelper.executeSQLFile("tidyWorkspaces.sql", desiredPersonasUsernameList);
-//
-//				databaseHelper.executeSQLFile("createDEFAULTWorkspace.sql", desiredPersonasUsernameList);
-//				databaseHelper.executeSQLFile("tidyWorkspaces.sql", desiredPersonasUsernameList);
-//			}
-//			
-//		} else {
-//			reporterHelper.log("\n************************************************************************************************************");
-//			reporterHelper.log("\tTest was executed via Jenkins, therefore no DB connections are possible");
-//			reporterHelper.log("\tNOTE: This is a temporary measure until a JENKINS/SQL Server authentication solution is found");
-//			reporterHelper.log("************************************************************************************************************\n");
-//		}
-
 	}
     
 
@@ -515,80 +493,12 @@ public class Hooks {
 		applicationURL = getApplicationURL(applicationName + "_URL");
 
 		
-//		// Added 25/05/2017 to ensure browser has started correctly, due to intermittent issue in docker
-//		reporterHelper.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-//		reporterHelper.log("@@ Performing browser initial checks - Launching browser: " + applicationURL);
-//		driver.get(applicationURL);
-//		
-//		By initialScreenElement = null;
-//		
-//		switch(applicationName) {
-//		
-//			case "KALIBRATE":
-//				initialScreenElement = OLDLocatorLibrary.kalibrate_login_UsernameTextBox;
-//				break;
-//			case "OPTIMUS":
-//				initialScreenElement = optimusLocatorLibrary.noddle_home_main_Header_1;
-//				break;
-//			}
-//		
-//		if (Utils.getProperty("AUTHENTICATION_METHOD").equalsIgnoreCase("FORMS")) {	
-//			boolean browserInitSuccess = false;
-//			
-//			int retryCount=0;
-//			while(!(browserInitSuccess = BrowserHelper.isElementDisplayed(driver, initialScreenElement)) && retryCount<10) {
-//				reporterHelper.log("@@ Initial screen not yet displayed, retryCount: " + retryCount);
-//				BrowserHelper.customSleep(1 * 1000);
-//				retryCount++;
-//			}
-//			
-//			if(!browserInitSuccess) {
-//				reporterHelper.log("@@ Initial screen not displayed after " + retryCount + " attempts.  Refreshing browser and retrying");
-//				reporterHelper.takeScreenshot(driver, "Login-Browser_Initialisation_Failed_After_" + retryCount + "_Retry_Attempts");
-//				driver.navigate().refresh();
-//				
-//				retryCount=0;
-//				while(!(browserInitSuccess = BrowserHelper.isElementDisplayed(driver, initialScreenElement)) && retryCount<10) {
-//					reporterHelper.log("@@ Initial screen not yet displayed, retryCount: " + retryCount);
-//					BrowserHelper.customSleep(1 * 1000);
-//					retryCount++;
-//				}
-//			}
-//			
-//			if(!browserInitSuccess) {
-//				reporterHelper.log("@@ Initial screen not displayed after refreshing and " + retryCount + " attempts.  Killing driver and restarting");
-//				reporterHelper.takeScreenshot(driver, "Login-Browser_Initialisation_Failed_After_Refresh_And_" + retryCount + "_Retry_Attempts");
-//				
-//				driver = null;
-//				setupBrowserDriver();
-//				driver.get(applicationURL);
-//				
-//				retryCount=0;
-//				while(!(browserInitSuccess = BrowserHelper.isElementDisplayed(driver, initialScreenElement)) && retryCount<10) {
-//					reporterHelper.log("@@ Initial screen not yet displayed, retryCount: " + retryCount);
-//					BrowserHelper.customSleep(1 * 1000);
-//					retryCount++;
-//				}
-//			}
-//	
-//			if(browserInitSuccess) {
-//				reporterHelper.takeScreenshot(driver, "Initial-Browser_Initialisation_Success");
-//				reporterHelper.log("@@ Initial screen displayed, starting scenario execution...");
-//			} else {
-//				reporterHelper.takeScreenshot(driver, "Initial-Browser_Initialisation_Failed_After_Driver_Reinitialised");
-//				// Could fail here but leaving test to start as usual and fail on login attaempt.
-//			}
-//		}
-		
 		reporterHelper.log("Launching browser: " + applicationURL);		
 		
-		// Launch Application        
+		// Launch Browser        
 	    driver.get("about:blank");
 
-//	    reporterHelper.log("navigating to applicaiton...");
-//	    reporterHelper.startTimer("Launch Application: " + applicationName);
-//	    driver.get(applicationURL);
-	    
+    
 	}
 
 	private static DesiredCapabilities getDesiredCapabilities(File app, String DEVICE_ID) {
@@ -821,33 +731,6 @@ public class Hooks {
 			reporterHelper.log("\tapplicationURL sourced: " + applicationURL);
 		}
 
-//		// Add creds to URL if using windows auth
-//		if (Utils.getProperty("AUTHENTICATION_METHOD").equalsIgnoreCase("WINDOWS")) {
-//			reporterHelper.log("Need to pass username and password in URL: https://<username>:<password>@<application_url>");
-//			
-//			String splitMatchString = "://";
-//			String newURL = "";
-//			
-//			List<String> urlSplit = Arrays.asList(applicationURL.split(splitMatchString));
-//			
-//			// If persona has not yet been set by Scenario step, default to first persona defined in config item PERSONAS_TO_CREATE
-//			if(currentPersona.equals("")) {
-//				currentPersona = desiredPersonasList.get(0);
-//				reporterHelper.log("currentPersona currently not set, selecting first persona from available personas list: " + currentPersona);
-//			}
-//			
-//			newURL += urlSplit.get(0);
-//			newURL += splitMatchString;
-//			newURL += getCredentials(currentPersona, "user").split("\\\\")[1];
-//			newURL += ":";
-//			newURL += getCredentials(currentPersona, "password");
-//			newURL += "@";
-//			newURL += urlSplit.get(1);
-//			
-//			applicationURL = newURL;
-//		}
-//		
-//		applicationURL = applicationURL.replaceAll("\\\\", "\\\\\\\\");
 		reporterHelper.log("applicationURL: " + applicationURL);
 		
 		return applicationURL;
@@ -1300,18 +1183,19 @@ public class Hooks {
     		FileReader fr = null;
 			try {
 				fr = new FileReader(personaFilePath);
-				
-				List<String> fileData = new ArrayList<String>();
-			    BufferedReader reader = new BufferedReader(fr);
-			    String line;
-			    while ((line = reader.readLine()) != null)
-			    {
-			    	System.out.println(line);
-			    }
-			    System.out.println();
-			    reader.close();
-			    
-			    fr = new FileReader(personaFilePath);
+			
+//				// Following can be uncommented to output the credentials file to the console
+//				List<String> fileData = new ArrayList<String>();
+//			    BufferedReader reader = new BufferedReader(fr);
+//			    String line;
+//			    while ((line = reader.readLine()) != null)
+//			    {
+//			    	System.out.println(line);
+//			    }
+//			    System.out.println();
+//			    reader.close();
+//			    
+//			    fr = new FileReader(personaFilePath);
 				    
 			} catch (FileNotFoundException e1) {
 				System.out.println("FileNotFoundException caught reading credentials file: " + e1.toString());

@@ -11,12 +11,19 @@ import cucumber.api.SnippetType;
         features = "src/test/resources/optimus/features",
         glue = "com.step_definitions.optimus",
 
-        monochrome = true,
-		
-//		tags = {"@optimus", "@positive", "~@wip", "~@ignore"},
-//        tags = {"@optimus", "~@wip", "~@ignore"},
+        //monochrome = true,
+		// The following tags dictate which scenarios from each of the feature files in 
+        // the project will be executed.  Note that tags prefixed with a ~ means that any
+        // scenario with that tag will not be ran
+        //
+        // So for example if tags {"@optimus", "@numero", "@login", "~@wip", "~@ignore"} are 
+        // set then any scenarios with all of the tags @optimus, @numero, and @login will 
+        // be excluded, unless they also have one or more of the tags @wip and @ignore
+        
+        //		tags = {"@optimus", "@positive", "~@wip", "~@ignore"},
+//      tags = {"@optimus", "~@wip", "~@ignore"},
 //		tags = {"@optimus", "@login", "~@wip", "~@ignore"},
-		tags = {"@optimus", "@supplierportal", "@login", "~@wip", "~@ignore"},
+		tags = {"@optimus", "@numero", "@login", "~@wip", "~@ignore"},
 //		tags = {"@optimus", "@supplierportal", "@basiccheck", "~@wip", "~@ignore"},
 //		tags = {"@optimus", "@ginger", "@james","~@wip", "~@ignore"},
         		
