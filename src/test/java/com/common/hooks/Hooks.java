@@ -58,10 +58,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.common.helpers.BrowserHelper;
 import com.common.helpers.DatabaseHelper;
-import com.common.helpers.OLDHelper;
 import com.common.helpers.ReporterHelper;
 import com.common.helpers.Utils;
-import com.common.page_objects.OLD_Generic_LocatorLibrary;
 import com.common.page_objects.Optimus_Generic_LocatorLibrary;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -76,7 +74,6 @@ public class Hooks {
 	public static ReporterHelper reporterHelper;
 	public static DatabaseHelper databaseHelper;
 	public static BrowserHelper browserHelper;
-	public static OLDHelper kalibrateHelper;
 	
 	public static AppiumDriver appiumDriver = null;
 	public static WebDriver driver = null;
@@ -105,7 +102,6 @@ public class Hooks {
 	public static String applicationVersion;
 	public static String applicationVersionSimplified;
 	
-	public static OLD_Generic_LocatorLibrary OLDLocatorLibrary;
 	public static Optimus_Generic_LocatorLibrary optimusLocatorLibrary;
 	
 	
@@ -365,7 +361,7 @@ public class Hooks {
 //				proxy.setHttpProxy("localhost:8888")
 //			     .setFtpProxy("localhost:8888")
 //			     .setSslProxy("localhost:8888");
-				System.out.println("JAMES");
+				
 				
 				chromeDriverOptions.setCapability(CapabilityType.PROXY, proxy);
 				chromeDriverOptions.setProxy(proxy);
@@ -481,8 +477,6 @@ public class Hooks {
 		// create browserHelper for synchronisation methods including bespoke
 		browserHelper = new BrowserHelper(this);
 		
-		kalibrateHelper = new OLDHelper(this);
-
 	}
 
 

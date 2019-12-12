@@ -22,11 +22,9 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import com.common.helpers.BrowserHelper;
 import com.common.helpers.DatabaseHelper;
-import com.common.helpers.OLDHelper;
 import com.common.helpers.ReporterHelper;
 import com.common.helpers.Utils;
 import com.common.hooks.Hooks;
-import com.common.page_objects.OLD_Generic_LocatorLibrary;
 import com.common.page_objects.Optimus_Generic_LocatorLibrary;
 
 import cucumber.api.PendingException;

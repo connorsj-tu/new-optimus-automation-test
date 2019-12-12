@@ -12,7 +12,6 @@ import com.common.helpers.BrowserHelper;
 import com.common.helpers.Utils;
 import com.common.hooks.Hooks;
 import com.common.page_objects.Optimus_Generic_LocatorLibrary;
-import com.common.page_objects.OLD_Generic_LocatorLibrary;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -94,25 +93,7 @@ public class Optimus_Hooks extends Hooks {
         	reporterHelper.log("Skipping http checks as PERFORM_HTTP_CHECKS is set to false in config");
 		
         // setup locator library
-        
-//        reporterHelper.log("Setting up kalibrateLocatorLibrary for application version: " + Hooks.applicationVersionSimplified);
-        
-//		switch(Hooks.applicationVersionSimplified) {
-//    	case "2.4.1":
-//    		kalibrateLocatorLibrary = new Kalibrate_241_LocatorLibrary();
-//			break;
-//    	case "2.8": case "2.9":
-//    		kalibrateLocatorLibrary = new Kalibrate_28_LocatorLibrary();
-//			break;
-//    	case "2.10":
-//    		kalibrateLocatorLibrary = new Kalibrate_210_LocatorLibrary();
-//			break;
-//    	default :
-//    		System.out.println("Unsupported version as derived from pninstalllog: " + Hooks.applicationVersionSimplified);
-//    		Assert.fail("Unsupported version as derived from pninstalllog: " + Hooks.applicationVersionSimplified);
-//    	}
-        
-        OLDLocatorLibrary = new OLD_Generic_LocatorLibrary();
+ 
         optimusLocatorLibrary = new Optimus_Generic_LocatorLibrary();
         
 		
